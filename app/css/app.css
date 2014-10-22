@@ -1,0 +1,424 @@
+
+html {overflow-y:scroll; }
+
+section {position: relative;}
+
+.ta-editor {
+    min-height: 300px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
+}
+
+
+
+
+
+
+
+.edit {
+    font-weight: bold;
+    color: green;
+}
+.delete {
+    font-weight: bold;
+    color: red;
+}
+label {
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+}
+input, select {
+
+}
+.radio fieldset label, .checkboxes fieldset label {
+    display: block;
+    text-align: left;
+}
+.radio fieldset label input, .checkboxes fieldset label input {
+    margin-right: 5px;
+}
+h3 {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+.required label:after {
+    color: #e32;
+    content: '*';
+    display:inline;
+}
+.order {
+    color: #ccc;
+}
+fieldset {
+    border: 1px solid #eee;
+    margin: 10px;
+    padding: 0 10px;
+}
+fieldset legend {
+    margin: 10px;
+}
+fieldset label {
+    width: auto;
+}
+fieldset div {
+    margin: 10px 0;
+}
+strong {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.ta-root {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+.well {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+}
+.well a {
+    display: block; cursor: pointer;min-height: 85px;
+}
+.nav > li > a {display: inline;}
+
+.phone {width: 320px; margin: 0 auto;}
+.tablet {width: 768px; margin: 0 auto;}
+.desktop {}
+.text-primary {color: #00355f;}
+
+ul li span.text-primary { display: inline-block;
+    font-weight: bold;
+    margin-top: 15px;}
+
+.nav ul li {list-style-type: none;}
+.nav ul {padding: 0; margin: 0;}
+
+
+
+.row {
+    margin-left: 0; margin-right: 0;
+}
+.modal {
+    bottom: 0;
+    display: none;
+    left: 0;
+    outline: 0 none;
+    overflow: hidden;
+    position: fixed;
+    right: 25px;
+    left: 25px;
+    top: 0;
+    z-index: 1050;}
+
+
+.modal-body{background-color: #fff;margin: 25px 35px 0 25px;}
+.modal-footer {background-color: #fff;margin: 0 35px 25px 25px;}
+/* Transitions */
+
+/* Default Enter/Leave */
+.ng-enter,
+.ng-leave {
+    transition-timing-function: ease;
+    transition-duration: 250ms;
+    transition-property: opacity;
+}
+
+.ng-enter {
+    opacity: 0;
+}
+
+.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.ng-leave {
+    opacity: 1;
+}
+
+.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+/* slideUp */
+.slideUp {
+    opacity: 1 !important;
+}
+
+.slideUp.ng-enter {
+    transition-property: none;
+    transform: translate3d(0,100%,0);
+}
+
+.slideUp.ng-enter.ng-enter-active {
+    transition-property: all;
+    transform: translate3d(0,0,0);
+}
+
+.slideUp.ng-leave {
+    transition-property: all;
+    transform: translate3d(0,0,0);
+}
+
+.slideUp.ng-leave.ng-leave-active {
+    transition-property: all;
+    transform: translate3d(0,-100%,0);
+}
+
+
+.panel-heading {
+    padding: 0
+}
+
+.panel-title {
+    padding: 10px 15px;
+}
+
+.container-fluid {
+    margin-bottom: 20px;
+}
+
+
+
+
+.container-phone {
+    border: 1px solid #d6d6d6;
+}
+
+label {font-size: 11px;}
+
+.container-phone {
+    background-color:#F0F0F0;
+    border: 5px solid #fff;
+    border-top: 75px solid #fff;
+    margin: 0 ;
+    border-bottom: 75px solid #fff;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.35);
+    box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.35);
+
+
+}
+
+.container-simple {overflow-x: hidden;}
+.simple-view div {position: relative;}
+
+.container-phone:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 0;
+    border:5px solid #999;
+    border-radius: 25px;
+    position: absolute;
+    top: -30px;
+    left: 38%;
+    z-index: 1;
+}
+
+.container-phone:before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 0;
+    border:5px solid #888;
+    border-radius: 25px;
+    position: absolute;
+    top: -50px;
+    left: 48%;
+    z-index: 1;
+}
+
+.container-simple {
+    overflow-y: scroll;
+    height: 550px;
+    width: 320px;
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+    border-left: 1px solid #F0F0F0;
+}
+
+.container-simple-well {border: none;}
+
+
+.container-simple .navbar {
+    border: none;
+}
+
+.container-simple .navbar-simple-border {
+    border: 1px solid;
+    clear: both;
+    overflow: hidden;
+}
+
+.container-simple .buttons-simple-border {
+    border-radius: 4px;
+    border: 1px solid;
+    margin: 5px 0;
+}
+
+.container-simple .btn .highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.container-simple .btn {
+    margin: 0;
+    padding: 15px 0;
+    border: none;
+}
+
+.container-simple .btn > div {
+    padding: 15px 0;
+}
+
+.container-simple .dropdown-mega {
+    border-color: #fff;
+}
+
+.form-simple {
+    padding: 0 5px;
+}
+
+.form-simple small {font-size: 10px;}
+
+.form-simple .buttons {
+    margin-top: 5px;
+}
+
+.form-simple input {
+    color: #777;
+    width: 100%;
+}
+
+.form-simple h3 {
+    margin: 10px 0;
+}
+
+.form-simple .row {
+    padding: 10px;
+}
+
+.form-simple .row label {
+    margin-top: 15px;
+}
+
+
+.form-simple .well {
+    border: 1px solid #d6d6d6;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.form-simple .col-sm-6 {
+    margin-top: 5px;
+}
+
+.form-simple .input-group {}
+
+/* simple jumbotron is inheriting a border radius somewhere in compiled LESS */
+.jumbotron {
+    border-radius: 0 !important;
+}
+
+/* bug in compiled LESS with colorpicker */
+.dropdown {
+    position: absolute !important;
+}
+
+/* tabs */
+.nav-tabs {border-bottom: none;}
+
+
+/* laptop whiskey */
+
+.laptop:before {
+    top: -6px;
+}
+.laptop:before {
+    background: none repeat scroll 0 0 #a5adbd;
+    border-radius: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    top: -5px;
+    width: 6px;
+}
+.laptop:before {
+    content: "";
+    left: 50%;
+    position: absolute;
+}
+.laptop {
+    border: 12px solid #e8ebf0;
+    border-radius: 10px 10px 0 0;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    width: 768px;
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+    transform: scale(0.6);
+    width: 680px;
+}
+
+.btm:before {
+    background: none repeat scroll 0 0 #d8dbe1;
+    border-radius: 0 0 5px 5px;
+    content: "";
+    height: 3px;
+    left: 50%;
+    margin-left: -21px;
+    position: absolute;
+    top: 2px;
+    width: 42px;
+}
+
+.btm {
+    background: none repeat scroll 0 0 #f4f5f7;
+    border-radius: 0 0 20px 20px;
+    bottom: -14px;
+    position: absolute;
+    height: 14px;
+    left: 50%;
+    margin-left: -384px;
+    width: 768px;
+    z-index: 1;
+}
+
+.content:before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    height: 300px;
+    position: absolute;
+    right: -90px;
+    transform: rotate(45deg);
+    width: 200px;
+    z-index: 5;
+}
+.content {
+    height: 377px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}

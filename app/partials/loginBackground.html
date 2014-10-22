@@ -1,0 +1,23 @@
+<h2>
+    Login Background
+</h2>
+<p>
+    Enter URL
+</p>
+<div ng-repeat="design in designloginbackground" style="margin-bottom: 25px;">
+    <input class="form-control" ng-model="design.value" />
+</div>
+<button class="btn btn-success" ng-click="goLoginBackground()">Save Login Background</button>
+<button class="btn btn-primary pull-right" ng-click="showhtmlcss = !showhtmlcss;">Toggle Generated File</button>
+<!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
+<div ng-show="showhtmlcss">
+    <div class="well" style="margin-top: 25px;">
+        <h1>
+            Generated CSS
+        </h1>
+        <p class="alert-info alert text-center">
+            Code Snippet
+        </p>
+        <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>
+    </div>
+</div>
