@@ -14,34 +14,28 @@
 
 <section class="container-fluid clearfix col-collapse">
     <div class="container-fluid" style="max-width: 768px; margin: 35px auto 0;">
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <ul class="nav navbar-nav navbar-left">
-                <li>
-                    <a href="https://angularjs.org/">A live HTML template editor built with AngularJS</a></span>
-                </li>
-                <li>
-                    Plugins: <a href="http://textangular.com/">Text Angular</a> <a href="https://github.com/fabiobiondi/angular-fullscreen">Fullscreen</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <button class="btn btn-default" ng-click="goFullscreen()"><i class="fa fa-expand"></i></button>
-                </li>
-            </ul>
-        </div>
-        <div class="text-center">
+                <div class="pull-right">
+                    <a href="#/newTemplate" class="btn btn-default" >Advanced</a>
+
+                    <a class="btn btn-default" ng-click="goFullscreen()"><i class="fa fa-expand"></i></a>
+                </div>
+
+
+        <div>
             <h1>
                 Theme Editor
+
             </h1>
-            <a href="#/headerTemplate" class="btn btn-default">Header</a>
+            <a href="#" class="btn btn-default">Desktop Theme</a>
+            <a href="#/headerTemplate" class="btn btn-default">Home Page Header</a>
             <a href="#/loginBackground" class="btn btn-default">Login Background</a>
             <a href="#/bodyBackground" class="btn btn-default">Body Background</a>
-            <a  href="#/newTemplate" class="btn btn-default" >New File</a>
+
             <br />
             <br />
         </div>
 
-<ng-view autoscroll/>
+    <ng-view autoscroll/>
 
     </div>
 </section>
