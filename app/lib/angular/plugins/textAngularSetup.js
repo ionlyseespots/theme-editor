@@ -14,7 +14,7 @@ angular.module('textAngularSetup', [])
 		['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'pre', 'quote'],
 		['bold', 'italics', 'underline', 'ul', 'ol', 'redo', 'undo', 'clear'],
 		['justifyLeft','justifyCenter','justifyRight','indent','outdent'],
-		['html', 'insertImage', 'insertLink', 'insertVideo']
+		['html', 'css', 'insertImage', 'insertLink', 'insertVideo']
 	],
 	classes: {
 		focussed: "focussed",
@@ -83,6 +83,10 @@ angular.module('textAngularSetup', [])
 	//insertImage: "Please enter a image URL to insert",
 	//insertLink: "Please enter a URL to insert",
 	//insertVideo: "Please enter a youtube URL to embed",
+    css: {
+        buttontext: 'Edit CSS',
+        tooltip: 'Edit CSS / Rich Text'
+    },
 	html: {
 		buttontext: 'Toggle HTML',
 		tooltip: 'Toggle html / Rich Text'
@@ -164,6 +168,16 @@ angular.module('textAngularSetup', [])
 			return this.$editor().showHtml;
 		}
 	});
+    taRegisterTool("css", {
+        buttontext: taTranslations.css.buttontext,
+        tooltiptext: taTranslations.css.tooltip,
+        action: function(){
+            this.$editor().switchView();
+        },
+        activeState: function(){
+            return this.$editor().showHtml;
+        }
+    });
 	// add the Header tools
 	// convenience functions so that the loop works correctly
 	var _retActiveStateFunction = function(q){

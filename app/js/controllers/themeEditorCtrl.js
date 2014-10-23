@@ -172,14 +172,10 @@ Simple.app.controller("themeEditorCtrl", function($scope){
 
     $scope.designDesktopCSS = [
         {
-            "name":             "headerbackground",
-            "parentclass":      "jumbotron",
-            "childclass":       "",
-            "parentelement":    "",
-            "element":          "",
-            "property":         "background-image",
-            "value":            "",
-            "important":        ""
+
+            "hello":            '',
+
+
         }
     ];
 
@@ -218,6 +214,17 @@ Simple.app.controller("themeEditorCtrl", function($scope){
             var el = i.element ? i.element + ' ' : '';
             var cl = i.class ? dot + i.class + ' ' : '';
             concat += pc + cc + pe + el + cl + ' {' + i.property + ': ' + 'url("' + i.value + '")' + i.important + ';}' + '\r';
+        });
+        return concat;
+    }
+
+    function formatNative(d) {
+        var concat = "";
+        angular.forEach(d, function (i) {
+
+            var designinner = i.hello;
+
+            concat += designinner + '\n' + '\r';
         });
         return concat;
     }
@@ -276,8 +283,8 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.cssfile);
     };
     $scope.goDesktopCSS = function() {
-        $scope.cssfile = '/* custom.css */' + '\n' + '/* Desktop Theme */' + '\n' + formatCss($scope.designDesktopCSS);
-        console.log($scope.cssfile);
+        $scope.templatefile = '/* custom.css */' + '\n' + '/* Desktop Template */' + '\n' + formatNative($scope.designDesktopCSS);
+        console.log($scope.templatefile);
     };
 
 

@@ -3,15 +3,14 @@
 </h2>
 <div class="text-center">
     <div class="well row text-center">
-        <div class="col-sm-3"><a class="bg-info"  style="  padding: 25px 0; text-align: center; color:#000;" ng-click="goNewDefault()">Edit Default</a></div>
+        <div class="col-sm-4"><a class="bg-info"  style="  padding: 25px 0; text-align: center; color:#000;" ng-click="goNewDefault()">Edit Default</a></div>
 
-        <div class="col-sm-3"><a class="bg-warning" style=" padding: 25px 0; text-align: center; color:#000;">Template</a></div>
-        <div class="col-sm-3"><a class="bg-warning"  style="  padding: 25px 0; text-align: center; color:#000;">Template</a></div>
-        <div class="col-sm-3"><a class="bg-success"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>
+        <div class="col-sm-4"><a class="bg-warning" style=" padding: 25px 0; text-align: center; color:#000;">Template</a></div>
+        <div class="col-sm-4"><a class="bg-success"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>
    </div>
 </div>
 <div style="margin-bottom: 25px;" ng-show="visible1 || visible2 || visible3">
-    <button class="btn btn-default" ng-click="goNewCustom()">100%</button>
+    <button class="btn btn-default" ng-click="goNewCustom()">Full width</button>
     <button class="btn btn-default" ng-click="goNewTwocol()">2-column</button>
     <button class="btn btn-default" ng-click="goNewThreecol()">3-column</button>
 </div>
@@ -148,8 +147,8 @@
         </div>
     </div>
     <div class="modal-footer" style="max-width: 1280px; margin: 0 auto;">
-        <button class="btn btn-success" ng-click="ok()">Okay</button>
-        <button class="btn" ng-click="cancel()">Cancel</button>
+        <button class="btn btn-default" ng-click="ok()">Close Preview</button>
+        <!--<button class="btn" ng-click="cancel()">Cancel</button>-->
     </div>
 </div>
         <p style="margin-top: 25px;">

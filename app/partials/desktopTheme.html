@@ -1,14 +1,23 @@
 <h2>
     Desktop Template
 </h2>
+<div class="text-center">
+    <div class="well row text-center">
+        <div class="col-sm-4"><a class="bg-info"  style="  padding: 25px 0; text-align: center; color:#000;" ng-click="goNewDefault()">Edit Default</a></div>
+
+        <div class="col-sm-4"><a class="bg-warning" style=" padding: 25px 0; text-align: center; color:#000;">Template</a></div>
+        <div class="col-sm-4"><a class="bg-success"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>
+    </div>
+</div>
 <p>
-    Edit Template CSS
+    Edit Template Styles
 </p>
-<div ng-repeat="design in designbodybackground" style="margin-bottom: 25px;">
-    <textarea class="form-control" ng-model="design.value" ></textarea>
+<div ng-repeat="design in designDesktopCSS" style="margin-bottom: 25px;">
+
+    <div ng-model="design.hello" ta-toolbar="[['css']]" text-angular=""></div>
 </div>
 <!--<button class="btn btn-success" ng-click="goBodyBackground()">Save Body Background</button>-->
-<button class="btn btn-success" ng-click="showhtmlcss = !showhtmlcss; goDesktopCSS();"><i class="fa fa-paste"></i> Create Copy/Paste</button>
+<button class="btn btn-success" ng-click=" showhtmlcss = 'true'; goDesktopCSS();"><i class="fa fa-paste"></i> Create Copy/Paste</button>
 <!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
 <div ng-show="showhtmlcss">
     <div class="well" style="margin-top: 25px;">
@@ -18,6 +27,6 @@
         <p class="alert-info alert text-center">
             Code Snippet
         </p>
-        <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>
+        <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{templatefile}}</code>
     </div>
 </div>
