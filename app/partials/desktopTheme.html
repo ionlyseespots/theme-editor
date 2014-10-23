@@ -1,0 +1,23 @@
+<h2>
+    Desktop Template
+</h2>
+<p>
+    Edit Template CSS
+</p>
+<div ng-repeat="design in designbodybackground" style="margin-bottom: 25px;">
+    <textarea class="form-control" ng-model="design.value" ></textarea>
+</div>
+<!--<button class="btn btn-success" ng-click="goBodyBackground()">Save Body Background</button>-->
+<button class="btn btn-success" ng-click="showhtmlcss = !showhtmlcss; goDesktopCSS();"><i class="fa fa-paste"></i> Create Copy/Paste</button>
+<!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
+<div ng-show="showhtmlcss">
+    <div class="well" style="margin-top: 25px;">
+        <h1>
+            Generated CSS
+        </h1>
+        <p class="alert-info alert text-center">
+            Code Snippet
+        </p>
+        <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>
+    </div>
+</div>

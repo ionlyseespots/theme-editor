@@ -15,14 +15,9 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     $scope.designviewdiv = [
         {
             "tag":              "div",
-            "class":            "col-xs-12",
-            "hello":            "1-column",
-            "children": [
-            {
-                "tag":          "span",
-                "html":         "prexisitingText: {newText}"
-            }
-        ]}
+            "class":            "container-fluid",
+            "hello":            ""
+       }
     ];
     $scope.designviewdivyou = [
         {
@@ -122,7 +117,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     $scope.designviewdefault = [
         {
             "tag":              "div",
-            "hello":            '<img src="http://www.four51.com/images/company/c5a12ff8ea8f4cb0aaf8dc662ea7085e.png"/><h2>Company Name</h2>',
+            "hello":            '',
             "title":            '',
             "class":            "col-xs-12"
         }
@@ -175,12 +170,27 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         }
     ];
 
+    $scope.designDesktopCSS = [
+        {
+            "name":             "headerbackground",
+            "parentclass":      "jumbotron",
+            "childclass":       "",
+            "parentelement":    "",
+            "element":          "",
+            "property":         "background-image",
+            "value":            "",
+            "important":        ""
+        }
+    ];
+
     // Toggle
     $scope.showhtml = false;
     $scope.showcss = false;
+    $scope.visible0 = true;
     $scope.visible1 = false;
     $scope.visible2 = false;
     $scope.visible3 = false;
+
 
 
     //** Format JSON to HTML
@@ -221,6 +231,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.templatefile);
     };
     $scope.goNewCustom = function() {
+        $scope.visible0 = false;
         $scope.visible1 = true;
         $scope.visible2 = false;
         $scope.visible3 = false;
@@ -229,6 +240,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.templatefile);
     };
     $scope.goNewTwocol = function() {
+        $scope.visible0 = false;
         $scope.visible1 = false;
         $scope.visible2 = true;
         $scope.visible3 = false;
@@ -237,6 +249,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.templatefile);
     };
     $scope.goNewThreecol = function() {
+        $scope.visible0 = false;
         $scope.visible1 = false;
         $scope.visible2 = false;
         $scope.visible3 = true;
@@ -262,5 +275,10 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         $scope.cssfile = '/* custom.css */' + '\n' + '/* login background */' + '\n' + formatCss($scope.designheaderbackground);
         console.log($scope.cssfile);
     };
+    $scope.goDesktopCSS = function() {
+        $scope.cssfile = '/* custom.css */' + '\n' + '/* Desktop Theme */' + '\n' + formatCss($scope.designDesktopCSS);
+        console.log($scope.cssfile);
+    };
+
 
 });

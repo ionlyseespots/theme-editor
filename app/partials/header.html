@@ -3,17 +3,46 @@
 </h2>
 <div class="text-center">
     <div class="well row text-center">
-        <div class="col-sm-4"><a style=" background-color:#555; padding: 25px 0; text-align: center; color:#fff;">Home Page Header</a></div>
-        <div class="col-sm-4"><a style=" background-color:#555; padding: 25px 0; text-align: center; color:#fff;">Template Header 1</a></div>
-        <div class="col-sm-4"><a style=" background-color:#555; padding: 25px 0; text-align: center; color:#fff;">Template Header 2</a></div>
+        <div class="col-sm-3"><a class="bg-info"  style="  padding: 25px 0; text-align: center; color:#000;" ng-click="goNewDefault()">Edit Default</a></div>
+
+        <div class="col-sm-3"><a class="bg-warning" style=" padding: 25px 0; text-align: center; color:#000;">Template</a></div>
+        <div class="col-sm-3"><a class="bg-warning"  style="  padding: 25px 0; text-align: center; color:#000;">Template</a></div>
+        <div class="col-sm-3"><a class="bg-success"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>
    </div>
 </div>
-<div>
-    <!--<button class="btn btn-default" ng-click="goHeaderBackground();isActiveHeaderBg = !isActiveHeaderBg;" style="float: right;">Toggle Background</button>-->
-    <div ng-repeat="design in designviewdefault">
+<div style="margin-bottom: 25px;" ng-show="visible1 || visible2 || visible3">
+    <button class="btn btn-default" ng-click="goNewCustom()">100%</button>
+    <button class="btn btn-default" ng-click="goNewTwocol()">2-column</button>
+    <button class="btn btn-default" ng-click="goNewThreecol()">3-column</button>
+</div>
+    <div ng-show="visible0" class="ng-scope" ng-repeat="design in designviewdefault">
         <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
     </div>
-</div>
+
+
+    <div ng-show="visible1">
+        <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
+    </div>
+
+    <div ng-show="visible2">
+        <tabset>
+            <tab heading="{{design.title}}" ng-repeat="design in designviewdivyou">
+                <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
+
+            </tab>
+        </tabset>
+    </div>
+    <div ng-show="visible3">
+        <tabset>
+            <tab heading="{{design.title}}" ng-repeat="design in designviewdivus">
+                <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
+            </tab>
+        </tabset>
+    </div>
+        </div>
+
+
+
 
 <!--<button class="btn btn-success" ng-click="goHeaderDefault(); goHeaderBackground(); ">Save Header</button>-->
 
@@ -23,7 +52,10 @@
     <!--<h4>Modal Dialog</h4>-->
     <!--</div>-->
     <div class="modal-body" style="max-width: 1280px; margin: 25px auto 0;">
-        <div ng-class='{"phone":tog==1, "tablet":tog==2, "desktop":tog==3}' style="height: 400px; overflow-y: scroll; overflow-x: hidden;">
+
+
+
+        <div style="height: 400px; overflow-y: scroll; overflow-x: hidden;">
             <nav class="navbar" role="navigation" style="min-height: 60px; border: 1px solid #fff;background-color:#50ACDB; border-radius: 0;">
                 <section>
                     <ul class="nav navbar-nav pull-left">
@@ -56,7 +88,7 @@
                 </section>
             </nav>
             <section class="active text-center" style="margin-top: 5px;">
-                <div class="container-fluid" style="margin: 25px 0;" ng-show="templatefile" ng-bind-html="templatefile"></div>
+                <div  class="container-fluid" style="margin: 25px 0;" ng-show="templatefile" ng-bind-html="templatefile" ng-style="'background-image':'design.value'"></div>
             </section>
             <section class="container-view">
                 <div class="container-fluid">
@@ -116,12 +148,6 @@
         </div>
     </div>
     <div class="modal-footer" style="max-width: 1280px; margin: 0 auto;">
-        <div class="btn-group btn-group-lg pull-left">
-            <button class="btn btn-default" ng-click='tog=1'><i class="fa fa-mobile"></i></button>
-            <button class="btn btn-default" ng-click='tog=2'><i class="fa fa-tablet"></i></button>
-            <button class="btn btn-default" ng-click='tog=3'><i class="fa fa-desktop"></i></button>
-        </div>
-
         <button class="btn btn-success" ng-click="ok()">Okay</button>
         <button class="btn" ng-click="cancel()">Cancel</button>
     </div>
@@ -132,7 +158,16 @@
 <div ng-repeat="design in designheaderbackground" style="margin-bottom: 25px;">
     <input class="form-control" ng-model="design.value" />
 </div>
-<button class="btn btn-success" ng-click="goHeaderDefault(); goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+<button ng-show="visible1" class="btn btn-success" ng-click="goNewCustom();goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+
+
+<button ng-show="visible2" class="btn btn-success" ng-click="goNewTwocol(); goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+
+
+<button ng-show="visible3"  class="btn btn-success" ng-click="goNewThreecol(); goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+
+
+<button ng-show="visible0" class="btn btn-success" ng-click="goHeaderDefault(); goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
 <!--<div  ng-class="{'hidden': !isActiveHeaderBg, '': isActiveHeaderBg}">-->
     <!--<button class="btn btn-default" ng-click="goHeaderDefault()" style="float: right;">Toggle Background</button>-->
     <!--<div ng-model="design.hello" ta-toolbar="[['insertImage','clear']]" text-angular=""></div>-->
