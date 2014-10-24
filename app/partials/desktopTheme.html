@@ -13,8 +13,7 @@
     Edit Template Styles
 </p>
 <div ng-repeat="design in designDesktopCSS" style="margin-bottom: 25px;">
-
-    <div ng-model="design.hello" ta-toolbar="[['css']]" text-angular=""></div>
+    <textarea ng-model="design.hello"></textarea>
 </div>
 <!--<button class="btn btn-success" ng-click="goBodyBackground()">Save Body Background</button>-->
 <button class="btn btn-success" ng-click=" showhtmlcss = 'true'; goDesktopCSS();"><i class="fa fa-paste"></i> Create Copy/Paste</button>
