@@ -1,15 +1,37 @@
 <h2>
-    Desktop Templates
+    Select a Desktop Template
 </h2>
 <div class="text-center">
     <div class="well text-center">
         <div class="row">
-            <div class="col-sm-12"><a class="bg-success" style=" padding: 50px 0; text-align: center; color:#000;" ng-click=" baseDesktop = 'true';">Base Template</a></div>
+            <div class="col-sm-6"><a class="baseDesktop" style=" text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></a></div>
+            <div class="col-sm-6 text-left">
+               <h2>Base Template</h2>
+
+                <ul>
+                    <li>Fullscreen background image</li>
+                    <li>Store width is 1024px</li>
+                    <li>Company logo / branding is centered above store*</li>
+                    <li>Company name is hidden*</li>
+                    <li>Mega-nav is hidden**</li>
+                    <li>Side-nav is hidden**</li>
+                    <li>Category images are more visual & fill the entire block</li>
+                    <li>Category name is hidden**</li>
+                    <li>Bottom Cart/Checkout buttons are located below store</li>
+                </ul>
+
+                <p>
+                    <em>*Logo can easily be made left or right aligned in the generated copy/paste below.</em>
+                </p>         <p><em>**Hidden elements can easily be made visible in the generated copy/paste below.</em>
+
+            </p>
+
+            </div>
         </div>
         <hr />
 
         <div class="row">
-            <div class="col-sm-4"><a style="  background-image: url('../../css/img/design1Thumbnail.jpg');width: 280px;display: block; height: 360px; text-align: center; color:#000;" ng-click=" desktop1 = 'true';">Template</a></div>
+            <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
 
             <div class="col-sm-4"><a class="bg-danger" style="  height: 360px; text-align: center; color:#000;" ng-click=" showhtmlcss = 'true'; goDesktopCSS();">Template</a></div>
             <div class="col-sm-4"><a class="bg-danger" style=" height: 360px; text-align: center; color:#000;" ng-click=" showhtmlcss = 'true'; goDesktopCSS();">Template</a></div>

@@ -3,6 +3,9 @@ html {overflow-y:scroll; }
 
 section {position: relative;}
 
+.baseDesktop {background: url('../css/img/baseThumbnail.jpg');width: 280px; height: 360px;}
+.desktop1 {background: url('../css/img/desktop1Thumbnail.jpg');width: 280px; height: 360px;}
+
 .ta-editor {
     min-height: 300px;
     height: auto;
@@ -28,6 +31,7 @@ label {
 input, select {
 
 }
+
 .radio fieldset label, .checkboxes fieldset label {
     display: block;
     text-align: left;
