@@ -5,7 +5,7 @@
 <div class="text-center">
     <div class="well text-center">
         <div class="row">
-            <div class="col-sm-6"><a class="baseDesktop" style=" text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></a></div>
+            <div class="col-sm-6"><a class="baseDesktop" style=" text-align: center; color:#000;" ng-click="baseDesktop1 = !baseDesktop1"></a></div>
             <div class="col-sm-6 text-left">
                <h2>Base Template</h2>
 
@@ -21,11 +21,11 @@
                     <li>Bottom Cart/Checkout buttons are located below store</li>
                 </ul>
                 <p>
-                    <em>*Background image can easily be replaced in the generated copy/paste.</em>
+                    <em>*Background image can be replaced</em>
                 </p>
                 <p>
-                    <em>**Logo can easily be made left or right aligned in the generated copy/paste.</em>
-                </p>         <p><em>***Hidden elements can easily be made visible in the generated copy/paste.</em>
+                    <em>**Logo can be made left or right aligned</em>
+                </p>         <p><em>***Hidden elements can be made visible</em>
 
             </p>
 
@@ -34,10 +34,10 @@
         <hr />
 
         <div class="row">
-            <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
+            <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click="desktop1 = !desktop1"></a></div>
 
-            <div class="col-sm-4"><a class="bg-danger" style="  height: 360px; text-align: center; color:#000;" ng-click=" showhtmlcss = 'true'; goDesktopCSS();">Template</a></div>
-            <div class="col-sm-4"><a class="bg-danger" style=" height: 360px; text-align: center; color:#000;" ng-click=" showhtmlcss = 'true'; goDesktopCSS();">Template</a></div>
+            <div class="col-sm-4"><a class="bg-danger" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</a></div>
+            <div class="col-sm-4"><a class="bg-danger" style=" height: 360px; text-align: center; color:#000;" ng-click=" desktop3 = 'true';">Template</a></div>
         </div>
         <hr />
 
@@ -77,7 +77,7 @@
 <!--<button class="btn btn-success" ng-click="goBodyBackground()">Save Body Background</button>-->
 <!--<button class="btn btn-success" ng-click=" showhtmlcss = 'true'; goDesktopCSS();"><i class="fa fa-paste"></i> Create Copy/Paste</button>-->
 <!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
-<div ng-show="baseDesktop || desktop1">
+<div ng-show="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15">
     <div class="well" style="margin-top: 25px;">
         <h1>
             Generated CSS
@@ -85,8 +85,8 @@
         <p class="alert-info alert text-center">
             Copy/Paste
         </p>
-        <pre ng-show="baseDesktop" ng-hide="desktop1"  style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
-/* code editor location: css/custom.css */
+        <pre ng-show="baseDesktop" ng-hide="desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15"  style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
+/* base code editor location: css/custom.css */
 /* header on top | no mega-nav | no side-nav | no fixed-bottom | centered logo | no company name | no category name | no nav right */
 @media (min-width: 990px){
     .container, .container-view, .jumbotron .container, .jumbotron .container-view, .navbar-fixed-bottom, .navbar-fixed-top {
@@ -214,8 +214,8 @@
     }
 }
     </code></pre>
-         <pre ng-show="desktop1" ng-hide="baseDesktop" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
- /* code editor location: css/custom.css */
+         <pre ng-show="desktop1"  ng-hide="baseDesktop  || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
+ /* 1 code editor location: css/custom.css */
  /* header on top | no mega-nav | no side-nav | no fixed-bottom | yes nav right */
 @media (min-width: 990px){
     .container, .container-view, .jumbotron .container, .jumbotron .container-view, .navbar-fixed-bottom, .navbar-fixed-top, .header.navbar.navbar-inner {
@@ -353,5 +353,50 @@
     }
 }
          </code></pre>
+
+      <pre ng-show="desktop2" ng-hide="baseDesktop  || desktop1 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 2
+      </pre>
+
+       <pre ng-show="desktop3" ng-hide="baseDesktop  || desktop1 || desktop2 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 3
+      </pre>
+       <pre ng-show="desktop4" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 4
+      </pre>
+       <pre ng-show="desktop5" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 5
+      </pre>
+       <pre ng-show="desktop6" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 6
+      </pre>
+       <pre ng-show="desktop7" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 7
+      </pre>
+       <pre ng-show="desktop8" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 8
+      </pre>
+       <pre ng-show="desktop9" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 9
+      </pre>
+       <pre ng-show="desktop10" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 10
+      </pre>
+       <pre ng-show="desktop11" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop12 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 11
+      </pre>
+       <pre ng-show="desktop12" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop13 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 12
+      </pre>
+       <pre ng-show="desktop13" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop14 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 13
+      </pre>
+       <pre ng-show="desktop14" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop15" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 14
+      </pre>
+       <pre ng-show="desktop15" ng-hide="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
+      design 15
+      </pre>
+
     </div>
 </div>
