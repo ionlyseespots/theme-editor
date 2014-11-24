@@ -15,9 +15,11 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     $scope.designviewdiv = [
         {
             "tag":              "div",
-            "class":            "container-fluid",
-            "hello":            ""
-       }
+            "hello":            "Full width",
+            "title":            "Full",
+            "class":            "col-sm-12"
+        }
+
     ];
     $scope.designviewdivyou = [
         {
@@ -182,8 +184,8 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     // Toggle
     $scope.showhtml = false;
     $scope.showcss = false;
-    $scope.visible0 = true;
-    $scope.visible1 = false;
+    $scope.visible0 = false;
+    $scope.visible1 = true;
     $scope.visible2 = false;
     $scope.visible3 = false;
 

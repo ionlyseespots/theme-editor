@@ -1,15 +1,15 @@
 <h2>
     Home Page Header
 </h2>
-<div class="text-center">
-    <div class="well row text-center">
-        <div class="col-sm-6"><a class="bg-success"  style="  padding: 25px 0; text-align: center; color:#000;" ng-click="goNewDefault()">Edit Default</a></div>
+<!--<div class="text-center">-->
+    <!--<div class="well row text-center">-->
+        <!--<div class="col-sm-6"><a class="bg-success"  style="  padding: 25px 0; text-align: center; color:#000;" ng-click="visible0 = true; visible1=false; visible2=false; visible3=false">Edit Default</a></div>-->
 
         <!--<div class="col-sm-4"><a class="bg-success" style=" padding: 25px 0; text-align: center; color:#000;">Template</a></div>-->
-        <div class="col-sm-6"><a class="bg-danger"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>
-   </div>
-</div>
-<div style="margin-bottom: 25px;" ng-show="visible1 || visible2 || visible3">
+        <!--<div class="col-sm-12"><a class="bg-success"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>-->
+   <!--</div>-->
+<!--</div>-->
+<div style="margin-bottom: 25px;" ng-show="visible1 || visible2 || visible3" ng-hide="visible0">
     <button class="btn btn-default" ng-click="goNewCustom()">Full width</button>
     <button class="btn btn-default" ng-click="goNewTwocol()">2-column</button>
     <button class="btn btn-default" ng-click="goNewThreecol()">3-column</button>
@@ -19,7 +19,7 @@
     </div>
 
 
-    <div ng-show="visible1">
+    <div ng-show="visible1" ng-repeat="design in designviewdiv">
         <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
     </div>
 
