@@ -15,7 +15,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     $scope.designviewdiv = [
         {
             "tag":              "div",
-            "hello":            "Full width",
+            "hello":            "",
             "title":            "Full",
             "class":            "col-sm-12"
         }
@@ -175,7 +175,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     $scope.designDesktopCSS = [
         {
 
-            "hello":            '',
+            "hello":            ''
 
 
         }
