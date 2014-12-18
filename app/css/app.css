@@ -39,11 +39,7 @@ input, select {
 .radio fieldset label input, .checkboxes fieldset label input {
     margin-right: 5px;
 }
-h3 {
-    border-top: 2px solid #ccc;
-    margin-top: 20px;
-    padding-top: 5px;
-}
+
 .required label:after {
     color: #e32;
     content: '*';
@@ -91,7 +87,6 @@ strong {
 .well a {
     display: block; cursor: pointer;min-height: 85px;
 }
-.nav > li > a {display: inline;}
 
 .phone {width: 320px; margin: 0 auto;}
 .tablet {width: 768px; margin: 0 auto;}
@@ -420,3 +415,6 @@ label {font-size: 11px;}
     overflow-x: hidden;
 
 }
+
+.panel-footer, .panel-heading, .panel-border, .panel-primary, .panel-defualt {border-color:#d6d6d6;}
+.panel-primary > .panel-heading {border: none;}
