@@ -266,7 +266,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         $scope.templatefile = formatHtml($scope.designviewdivus);
         console.log($scope.templatefile);
     };
-    $scope.goLoginBackground = function() {;
+    $scope.goLoginBackground = function() {
         $scope.cssfile = '/* custom.css */' + '\n' + '/* login background */' + '\n' + formatCss($scope.designloginbackground);
         console.log($scope.cssfile);
     };
