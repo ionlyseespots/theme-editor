@@ -266,7 +266,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         $scope.templatefile = formatHtml($scope.designviewdivus);
         console.log($scope.templatefile);
     };
-    $scope.goLoginBackground = function() {;
+    $scope.goLoginBackground = function() {
         $scope.cssfile = '/* custom.css */' + '\n' + '/* login background */' + '\n' + formatCss($scope.designloginbackground);
         console.log($scope.cssfile);
     };
@@ -288,21 +288,4 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         $scope.templatefile = '/* custom.css */' + '\n' + '/* Desktop Template */' + '\n' + formatNative($scope.designDesktopCSS);
         console.log($scope.templatefile);
     };
-
-    $scope.getTextToCopy = function() {
-        return "ngClip is awesome!";
-    };
-    $scope.doSomething = function () {
-        $scope.copy("some text to copy");
-        console.log("NgClip...");
-    };
-    client.on( "load", function(client)
-    {
-        $scope.('#flash-loaded').fadeIn();
-
-        client.on( "complete", function(client, args) {
-            client.setText( "Set text copied." );
-            $scope.('#click-to-copy-text').fadeIn();
-        } );
-    } );
 });
