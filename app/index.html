@@ -7,8 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js" type="text/javascript"></script>
 
-
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/ng-clip/0.2.6/ng-clip.min.js" type="text/javascript"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ng-clip/0.2.6/ng-clip.min.js" type="text/javascript"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/1.1.7/ZeroClipboard.min.js"></script>
 
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +38,24 @@
 
 </section>
 
+<script>
+    var SimpleApp = angular.module('SimpleApp', ["ngClipboard"]);
+    SimpleApp.config(['ngClipProvider', function(ngClipProvider) {
+        ngClipProvider.setPath("../bower_components/zeroclipboard/dist/ZeroClipboard.swf");
+    }]);
+    SimpleApp.controller('myctrl', function ($scope) {
+        $scope.fallback = function(copy) {
+            window.prompt('Press cmd+c to copy the text below.', copy);
+        };
+        $scope.showMessage = function() {
+            console.log("clip-click works!");
+        };uiZeroclipConfigProvider.setZcConf({
+            swfPath: '../path/to/ZeroClipboard.swf'
+        })
+
+    });
+</script>
+
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
@@ -63,5 +81,8 @@
 <script src="lib/angular/plugins/textAngular.js" type="text/javascript"></script>
 <script src="lib/angular/plugins/textAngularSetup.js" type="text/javascript"></script>
 <!--<script src="lib/angular/plugins/textAngular-sanitize.js" type="text/javascript"></script>-->
+
+<script src="main.js"></script>
+<script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
 </body>
 </html>
