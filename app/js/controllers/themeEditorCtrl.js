@@ -289,5 +289,20 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.templatefile);
     };
 
+    $scope.getTextToCopy = function() {
+        return "ngClip is awesome!";
+    };
+    $scope.doSomething = function () {
+        $scope.copy("some text to copy");
+        console.log("NgClip...");
+    };
+    client.on( "load", function(client)
+    {
+        $scope.('#flash-loaded').fadeIn();
 
+        client.on( "complete", function(client, args) {
+            client.setText( "Set text copied." );
+            $scope.('#click-to-copy-text').fadeIn();
+        } );
+    } );
 });
