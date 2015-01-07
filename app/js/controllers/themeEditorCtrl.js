@@ -288,13 +288,4 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         $scope.templatefile = '/* custom.css */' + '\n' + '/* Desktop Template */' + '\n' + formatNative($scope.designDesktopCSS);
         console.log($scope.templatefile);
     };
-
-    $scope.getTextToCopy = function() {
-        return "ngClip is awesome!";
-    };
-    $scope.doSomething = function () {
-        $scope.copy("some text to copy");
-        console.log("NgClip...");
-    };
-
 });
