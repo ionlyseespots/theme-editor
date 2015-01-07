@@ -147,18 +147,18 @@ Simple.app.controller("themeEditorCtrl", function($scope){
             "important":        " !important"
         }
     ];
-    $scope.designbodybackground = [
-        {
-            "name":             "bodybackground",
-            "parentclass":      "",
-            "childclass":       "",
-            "parentelement":    "body",
-            "element":          "",
-            "property":         "background-image",
-            "value":            "",
-            "important":        ""
-        }
-    ];
+//    $scope.designbodybackground = [
+//        {
+//            "name":             "bodybackground",
+//            "parentclass":      "",
+//            "childclass":       "",
+//            "parentelement":    "body",
+//            "element":          "",
+//            "property":         "background-image",
+//            "value":            "",
+//            "important":        ""
+//        }
+//    ];
     $scope.designheaderbackground = [
         {
             "name":             "headerbackground",
