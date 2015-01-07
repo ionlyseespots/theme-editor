@@ -37,10 +37,11 @@
     </div>
     <script type="text/javascript" src="../bower_components/jquery-zclip/jquery.zclip.js"></script>
     <a href id="d_clip_button" style="border:1px solid black; padding:20px;">Copy To Clipboard</a>
+    <p id="description">dddddddddddddddddd</p>
     <script language="JavaScript">
         $('#d_clip_button').zclip({
            path:'ZeroClipboard.swf',
-            copy:'boo'
+            copy:$('p#description').text()
         });
     </script>
 </section>
