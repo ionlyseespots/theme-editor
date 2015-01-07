@@ -16,6 +16,7 @@
     <!--<link rel="stylesheet" href="css/csseditor.css">-->
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/app.css">
+
 </head>
 <body>
 <div class="navbar navbar-default" role="navigation">
@@ -35,11 +36,13 @@
 
     <ng-view autoscroll/>
     </div>
+    <script type="text/javascript" src="jquery.clipboard.js"></script>
 
+    <a class="link-element" href="">d</a>
 </section>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 
 <script src="js/app.js" type="text/javascript"></script>
 <script src="lib/angular/angular-route.js"></script>
@@ -63,5 +66,19 @@
 <script src="lib/angular/plugins/textAngular.js" type="text/javascript"></script>
 <script src="lib/angular/plugins/textAngularSetup.js" type="text/javascript"></script>
 <!--<script src="lib/angular/plugins/textAngular-sanitize.js" type="text/javascript"></script>-->
+
+<script>
+    $(document).ready(function() {
+
+        $('a.link-element').clipboard({
+            path: 'jquery.clipboard.swf',
+            copy: function() {
+                alert('Text copied. Try to paste it now!');
+                return $('div#some-content').text();
+            }
+        });
+    });
+
+</script>
 </body>
 </html>
