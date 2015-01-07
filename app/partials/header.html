@@ -1,23 +1,20 @@
-<div class="pull-right">
-    <a href="#/newTemplate" class="btn btn-default" >Advanced</a>
-</div>
+<!--<div class="pull-right">-->
+    <!--<a href="#/newTemplate" class="btn btn-default" >Advanced</a>-->
+<!--</div>-->
 
 
-<div class="text-center">
-    <h1>
-        Theme Editor
+<!--<div>-->
 
-    </h1>
+    <!--<a href="#/desktopTheme" class="btn btn-default">Desktop Templates</a>-->
+    <!--<a href="#/headerTemplate" class="btn btn-default">Branding</a>-->
 
-    <a href="#/headerTemplate" class="btn btn-default">Home Page Header</a>
-    <a href="#/desktopTheme" class="btn btn-default">Desktop Templates</a>
-    <a href="#/loginBackground" class="btn btn-default">Login Background Image</a>
-    <!--<a href="#/bodyBackground" class="btn btn-default">Body Background</a>-->
-    <br />
-    <br />
-</div>
+    <!--<a href="#/loginBackground" class="btn btn-default">Login Background Image</a>-->
+    <!--&lt;!&ndash;<a href="#/bodyBackground" class="btn btn-default">Body Background</a>&ndash;&gt;-->
+    <!--<br />-->
+    <!--<br />-->
+<!--</div>-->
 <h2>
-    Home Page Header
+    Branding
 </h2>
 <!--<div class="text-center">-->
     <!--<div class="well row text-center">-->
@@ -27,35 +24,35 @@
         <!--<div class="col-sm-12"><a class="bg-success"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>-->
    <!--</div>-->
 <!--</div>-->
-<div style="margin-bottom: 25px;" ng-show="visible1 || visible2 || visible3" ng-hide="visible0">
-    <button class="btn btn-default" ng-click="goNewCustom()">Full width</button>
-    <button class="btn btn-default" ng-click="goNewTwocol()">2-column</button>
-    <button class="btn btn-default" ng-click="goNewThreecol()">3-column</button>
-</div>
-    <div ng-show="visible0" class="ng-scope" ng-repeat="design in designviewdefault">
+<!--<div style="margin-bottom: 25px;" ng-show="visible1 || visible2 || visible3" ng-hide="visible0">-->
+    <!--<button class="btn btn-default" ng-click="goNewCustom()">Full width</button>-->
+    <!--<button class="btn btn-default" ng-click="goNewTwocol()">2-column</button>-->
+    <!--<button class="btn btn-default" ng-click="goNewThreecol()">3-column</button>-->
+<!--</div>-->
+    <!--<div  class="ng-scope" ng-repeat="design in designviewdefault">-->
+        <!--<div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>-->
+    <!--</div>-->
+
+
+    <div ng-repeat="design in designviewdiv">
         <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
     </div>
 
+    <!--<div ng-show="visible2">-->
+        <!--<tabset>-->
+            <!--<tab heading="{{design.title}}" ng-repeat="design in designviewdivyou">-->
+                <!--<div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>-->
 
-    <div ng-show="visible1" ng-repeat="design in designviewdiv">
-        <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
-    </div>
-
-    <div ng-show="visible2">
-        <tabset>
-            <tab heading="{{design.title}}" ng-repeat="design in designviewdivyou">
-                <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
-
-            </tab>
-        </tabset>
-    </div>
-    <div ng-show="visible3">
-        <tabset>
-            <tab heading="{{design.title}}" ng-repeat="design in designviewdivus">
-                <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
-            </tab>
-        </tabset>
-    </div>
+            <!--</tab>-->
+        <!--</tabset>-->
+    <!--</div>-->
+    <!--<div ng-show="visible3">-->
+        <!--<tabset>-->
+            <!--<tab heading="{{design.title}}" ng-repeat="design in designviewdivus">-->
+                <!--<div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>-->
+            <!--</tab>-->
+        <!--</tabset>-->
+    <!--</div>-->
         </div>
 
 
@@ -104,9 +101,9 @@
                     </ul>
                 </section>
             </nav>
-            <!--<section class="active text-center" style="margin-top: 5px;">-->
-                <!--<div  class="container-fluid" style="margin: 25px 0;" ng-show="templatefile" ng-bind-html="templatefile" ng-style="'background-image':'design.value'"></div>-->
-            <!--</section>-->
+            <section class="active text-center" style="margin-top: 5px;">
+                <div  class="container-fluid" style="margin: 25px 0;" ng-show="templatefile" ng-bind-html="templatefile"></div>
+            </section>
             <section class="container-view">
                 <div class="container-fluid">
                     <nav>

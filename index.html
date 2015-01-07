@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<html ng-controller='SimpleCtrl' ng-app='SimpleApp'>
+<head>
+    <title>Theme Editor</title>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        .navbar-theme-editor {
+            border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
+            box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);
+            height: 88px;
+            background-color: hsla(0, 0%, 100%, 0.95);
+            transition: background-color 0.2s ease-in-out 0s;
+        }
+        .navbar-theme-editor .nav li a { color: hsl(0, 0%, 68%);
+            font-size: 24px;margin: 0 9px;
+            padding:35px 0;
+            text-decoration: none;
+            transition-duration: 0.2s;
+            transition-property: font-size, color;
+            transition-timing-function: ease-in-out;}
+        .navbar-theme-editor .nav li a.active {color: hsl(0, 0%, 20%);}
+    </style>
 </head>
 <body>
-<h1>Theme Editor</h1>
-<a href="app">Go to HTML + Bootstrap Template Editor application</a>
+<h1>Landing Page</h1>
+<a href="app\index.html">Go to HTML + Bootstrap Template Editor application</a>
+</body>
 </html>

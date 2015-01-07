@@ -16,16 +16,49 @@
     <!--<link rel="stylesheet" href="css/csseditor.css">-->
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <style>
+        .navbar-theme-editor {
+            border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
+            box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);
+            height: 88px;
+            background-color: hsla(0, 0%, 100%, 0.95);
+            transition: background-color 0.2s ease-in-out 0s;
+        }
+        .navbar-theme-editor .nav li a { color: hsl(0, 0%, 68%);
+            font-size: 16px;margin: 0 9px;
+            padding:35px 0;
+            text-decoration: none;
+            transition-duration: 0.2s;
+            transition-property: font-size, color;
+            transition-timing-function: ease-in-out;}
+        .navbar-theme-editor .nav li a.active {color: hsl(0, 0%, 20%);}
+
+    </style>
 </head>
 <body>
-<div class="navbar navbar-default" role="navigation">
-    <ul class="nav navbar-nav text-center" style="width: 100%; padding: 0;">
-        <li><span style="padding: 15px; width: 100%; display: block;height: 100%;">Ordercloud 2.0</span></li>
-        <li><a href="#/colorEditor" style="padding: 15px; width: 100%; display: block;height: 100%;">Color Editor</a></li>
-        <li><a style="padding: 15px; width: 100%; display: block;height: 100%;"href="#/headerTemplate">Theme Editor</a></li>
-        <li class="pull-right" style="padding: 10px 10px 0 0;">
-            <button class="btn btn-default" ng-click="goFullscreen()"><i class="fa fa-expand"></i></button>
+<div class="navbar navbar-default navbar-theme-editor navbar-fixed-top" role="navigation" track-active>
+    <ul class="nav navbar-nav  text-center" style="width: 100%; margin: 0;padding: 0 25px 0 0;">
+        <li style="border-right: 1px solid hsla(0, 0%, 0%, 0.1);padding: 0 25px;margin-top: -2px;"><a href="../index.html" style=" width: 100%;font-size: 24px; display: block;height: 100%;">Four51</a></li>
+
+
+
+        <li>
+            <a href="#/desktopTheme" style="width: 100%; display: block;height: 100%;">Templates</a>
         </li>
+        <li><a href="#/colorEditor"style="width: 100%; display: block;height: 100%;" >Colors</a></li>
+        <li> <a href="#/headerTemplate" style="width: 100%; display: block;height: 100%;">Branding</a>
+
+        </li>
+        <li>
+            <a href="#/loginBackground" style="width: 100%; display: block;height: 100%;">Login Image</a>
+        </li>
+        <li class="pull-right">
+            <a href="#/newTemplate" style="width: 100%; display: block;height: 100%;" >New File</a>
+            <!--<button class="btn btn-default" ng-click="goFullscreen()"><i class="fa fa-expand"></i></button>-->
+        </li>
+
+
+
     </ul>
 
 </div>
@@ -46,6 +79,8 @@
                 copy:$('p#description').text()
             });
         });
+
+
     </script>
 </section>
 

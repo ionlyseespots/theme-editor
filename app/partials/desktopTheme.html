@@ -1,70 +1,71 @@
-<div class="pull-right">
-    <a href="#/newTemplate" class="btn btn-default" >Advanced</a>
-</div>
+<!--<div class="pull-right">-->
+    <!--<a href="#/newTemplate" class="btn btn-default" >Advanced</a>-->
+<!--</div>-->
 
 
-<div class="text-center">
-    <h1>
-        Theme Editor
+<!--<div>-->
 
-    </h1>
+    <!--<a href="#/desktopTheme" class="btn btn-default">Desktop Templates</a>-->
+    <!--<a href="#/headerTemplate" class="btn btn-default">Branding</a>-->
 
-    <a href="#/headerTemplate" class="btn btn-default">Home Page Header</a>
-    <a href="#/desktopTheme" class="btn btn-default">Desktop Templates</a>
-    <a href="#/loginBackground" class="btn btn-default">Login Background Image</a>
-    <!--<a href="#/bodyBackground" class="btn btn-default">Body Background</a>-->
-    <br />
-    <br />
-</div>
+    <!--<a href="#/loginBackground" class="btn btn-default">Login Background Image</a>-->
+    <!--&lt;!&ndash;<a href="#/bodyBackground" class="btn btn-default">Body Background</a>&ndash;&gt;-->
+    <!--<br />-->
+    <!--<br />-->
+<!--</div>-->
 <h2>
-    Desktop Templates
+    Templates
 </h2>
 <ol>
     <li>Select a thumbnail</li>
     <li>Copy - click a thumbnail to automatically copy theme to your clipboard</li>
-    <li>Paste - paste theme in Admin code editor file: css/custom.css</li>
+    <li>Paste - paste in Admin code editor file: css/custom.css</li>
 </ol>
+<style>
+    .row a {
+        margin: 15px 0;
+        transition: margin 0.5s ease-out 0s;
+        -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out;
+        background-size: 100%;width: 100%;max-height: 360px; min-height: 100px;  background-repeat: no-repeat;
+    }
+    .row a:hover { margin-top: 2px;}
 
+
+</style>
 
 <div class="text-center">
     <div class="well text-center">
-        <div class="row">
-            <h2 class="text-left">
-                Default Template
-            </h2>
-            <div class="col-sm-12 text-center">
 
-                <a class="baseDesktop" style=" text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></a>
+
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></a>
             </div>
-        </div>
-        <hr />
-
-        <div class="row">
             <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
-
             <div class="col-sm-4"><a class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</a></div>
-            <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
-                 ng-click="
-                 desktop3 = true;
-                 baseDesktop= false;
-                 desktop1= false;
-                 desktop2= false;
-                 desktop4= false;
-                 desktop5= false;
-                 desktop6= false;
-                 desktop7= false;
-                 desktop8= false;
-                 desktop9= false;
-                 desktop10= false;
-                 desktop11= false;
-                 desktop12= false;
-                 desktop13= false;
-                 desktop14= false;
-                 desktop15= false;
-                    ">
-                Template</a></div>
+            <!--<div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"-->
+                 <!--ng-click="-->
+                 <!--desktop3 = true;-->
+                 <!--baseDesktop= false;-->
+                 <!--desktop1= false;-->
+                 <!--desktop2= false;-->
+                 <!--desktop4= false;-->
+                 <!--desktop5= false;-->
+                 <!--desktop6= false;-->
+                 <!--desktop7= false;-->
+                 <!--desktop8= false;-->
+                 <!--desktop9= false;-->
+                 <!--desktop10= false;-->
+                 <!--desktop11= false;-->
+                 <!--desktop12= false;-->
+                 <!--desktop13= false;-->
+                 <!--desktop14= false;-->
+                 <!--desktop15= false;-->
+                    <!--">-->
+                <!--Template</a></div>-->
         </div>
-        <hr />
+
 
         <div class="row">
             <div class="col-sm-4"><a class="bg-success"style="  height: 360px;text-align: center; color:#000;"
@@ -129,7 +130,7 @@
                     ">
                 Template</a></div>
         </div>
-        <hr />
+
 
         <div class="row">
             <div class="col-sm-4"><a class="bg-success" style="height: 360px; text-align: center; color:#000;"
@@ -194,7 +195,7 @@
                     ">
                  Template</a></div>
         </div>
-        <hr />
+
 
         <div class="row">
             <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
@@ -259,7 +260,7 @@
                     ">
                  Template</a></div>
         </div>
-        <hr />
+
 
         <div class="row">
             <div class="col-sm-4"><a class="bg-success" style="height: 360px; text-align: center; color:#000;"
