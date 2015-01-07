@@ -4,19 +4,38 @@
     <title>Theme Editor</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js" type="text/javascript"></script>
 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js" type="text/javascript"></script>
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ng-clip/0.2.6/ng-clip.min.js" type="text/javascript"></script>-->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/1.1.7/ZeroClipboard.min.js"></script>
-
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/1.1.7/ZeroClipboard.min.js"></script>-->
+    <script src="ZeroClipboard.js"></script>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/colorpicker.css">
     <!--<link rel="stylesheet" href="css/csseditor.css">-->
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript">
 
+        //set path
+        ZeroClipboard.setMoviePath('https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.swf');
+        //create client
+        var clip = new ZeroClipboard.Client();
+        //event
+        clip.addEventListener('mousedown',function() {
+            clip.setText(document.getElementById('box-content').value);
+        });
+        clip.addEventListener('complete',function(client,text) {
+            alert('copied: ' + text);
+        });
+        //glue it to the button
+        clip.glue('copy');
+
+    </script>
 </head>
 <body>
 <div class="navbar navbar-default" role="navigation">
@@ -39,10 +58,20 @@
     <script type="text/javascript" src="jquery.clipboard.js"></script>
 
     <a class="link-element" href="">d</a>
+    <p>Click the copy button below to copy the contents of the TEXTAREA into your OS' clipboard.</p>
+
+    <div style="position:relative;">
+        <a href="javascript:;" id="copy" style="display:block;">Copy</a>
+    </div>
+    <input type="button" id="copy" name="copy" value="Copy to Clipboard" style="margin-top:-10px;display:none" />
+
+    <textarea name="box-content" id="box-content" rows="5" cols="70">
+        The David Walsh Blog is the best blog around!  MooTools FTW!
+    </textarea>
+    <br /><br />
 </section>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<!--<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+
 
 <script src="js/app.js" type="text/javascript"></script>
 <script src="lib/angular/angular-route.js"></script>
@@ -67,18 +96,5 @@
 <script src="lib/angular/plugins/textAngularSetup.js" type="text/javascript"></script>
 <!--<script src="lib/angular/plugins/textAngular-sanitize.js" type="text/javascript"></script>-->
 
-<script>
-    $(document).ready(function() {
-
-        $('a.link-element').clipboard({
-            path: 'jquery.clipboard.swf',
-            copy: function() {
-                alert('Text copied. Try to paste it now!');
-                return $('div#some-content').text();
-            }
-        });
-    });
-
-</script>
 </body>
 </html>
