@@ -70,6 +70,16 @@
     </div>
     <script type="text/javascript" src="../bower_components/jquery-zclip/jquery.zclip.js"></script>
 
+    <script language="JavaScript">
+        $(document).ready(function(){
+            $('#baseDesktop').zclip({
+                path:'ZeroClipboard.swf',
+                copy:$('p.baseDesktop').text()
+            });
+        });
+
+
+    </script>
 </section>
 
 
