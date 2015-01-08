@@ -24,6 +24,9 @@
     <li>Copy - click a thumbnail to automatically copy theme to your clipboard</li>
     <li>Paste - paste in Admin code editor file: css/custom.css</li>
 </ol>
+<a href="#" id="d_clip_button" style="border:1px solid black; padding:20px;">Copy To Clipboard</a>
+<br /><br />
+<p id="description">bogeyman</p>
 <style>
     .row a {
         margin: 15px 0;
@@ -35,7 +38,17 @@
 
 
 </style>
+<script language="JavaScript">
+    $(document).ready(function(){
+        $('#d_clip_button').zclip({
+            path:'ZeroClipboard.swf',
+            copy:$('p#description').text()
+        });
 
+    });
+
+
+</script>
 <div class="text-center">
     <div class="well text-center">
 
