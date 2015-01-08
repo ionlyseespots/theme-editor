@@ -13,6 +13,19 @@
     <!--<br />-->
     <!--<br />-->
 <!--</div>-->
+
+
+<script type="text/javascript" src="../../bower_components/jquery-zclip/jquery.zclip.js"></script>
+<script language="JavaScript">
+    $(document).ready(function(){
+        $('a.baseDesktop').zclip({
+            path:'ZeroClipboard.swf',
+            copy:$('.baseDesktop').text()
+        });
+    });
+
+
+</script>
 <h2>
     Templates
 </h2>
@@ -40,7 +53,7 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <a class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></a>
+                <a href="#.#" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></a>
             </div>
             <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
             <div class="col-sm-4"><a class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</a></div>
@@ -339,7 +352,7 @@
         <p class="alert-success alert text-center">
             Copy/Paste
         </p>
-        <pre ng-show="baseDesktop"  style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
+        <pre ng-show="baseDesktop"  class="baseDesktop" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
 /* Cloud Template Base */
 /* code editor location: css/custom.css */
 <!-- header on top | no mega-nav | no side-nav | no fixed-bottom | no nav right -->
