@@ -55,6 +55,7 @@
 
                         if (jQuery.isFunction(settings.beforeCopy)) {
                             o.trigger('zClip_beforeCopy');
+                            window.location.reload(true);
                         }
 
                         if (!jQuery.isFunction(settings.copy)) {
