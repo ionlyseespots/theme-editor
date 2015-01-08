@@ -4,7 +4,7 @@ body {margin-top: 88px;}
 hr {border-color: transparent;}
 section {position: relative;}
 a {outline: none !important;}
-div.baseDesktop {background: url('../css/img/baseThumbnail.jpg');width: 280px; height: 360px;}
+#baseDesktop {background: url('../css/img/baseThumbnail.jpg');width: 280px; height: 360px;}
 .desktop1 {background: url('../css/img/desktop1Thumbnail.jpg');width: 280px; height: 360px;}
 .nav > li {display: inline-block;}
 .ta-editor {

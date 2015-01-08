@@ -18,9 +18,9 @@
 <script type="text/javascript" src="../bower_components/jquery-zclip/jquery.zclip.js"></script>
 <script language="JavaScript">
     $(document).ready(function(){
-        $('div.baseDesktop').zclip({
+        $('#baseDesktop').zclip({
             path:'ZeroClipboard.swf',
-            copy:$('pre.baseDesktop').text()
+            copy:$('p.baseDesktop').text()
         });
     });
 
@@ -53,7 +53,7 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <div class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></div>
+                <div id="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></div>
             </div>
             <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
             <div class="col-sm-4"><a class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</a></div>
@@ -352,7 +352,8 @@
         <p class="alert-success alert text-center">
             Copy/Paste
         </p>
-        <pre ng-show="baseDesktop"  class="baseDesktop" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
+        <p class="baseDesktop">
+        <pre ng-show="baseDesktop"   style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
 /* Cloud Template Base */
 /* code editor location: css/custom.css */
 <!-- header on top | no mega-nav | no side-nav | no fixed-bottom | no nav right -->
@@ -489,6 +490,7 @@
     }
 }
     </code></pre>
+     </p>
          <pre ng-show="desktop1" style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"><code>
 /* Cloud Template 001 */
 /* code editor location: css/custom.css */
