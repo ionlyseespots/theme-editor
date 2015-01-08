@@ -15,12 +15,12 @@
 <!--</div>-->
 
 
-<script type="text/javascript" src="../../bower_components/jquery-zclip/jquery.zclip.js"></script>
+<script type="text/javascript" src="../bower_components/jquery-zclip/jquery.zclip.js"></script>
 <script language="JavaScript">
     $(document).ready(function(){
-        $('a.baseDesktop').zclip({
+        $('div.baseDesktop').zclip({
             path:'ZeroClipboard.swf',
-            copy:$('.baseDesktop').text()
+            copy:$('pre.baseDesktop').text()
         });
     });
 
@@ -53,7 +53,7 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <a href="#.#" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></a>
+                <div class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ng-click=" baseDesktop = 'true';"></div>
             </div>
             <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
             <div class="col-sm-4"><a class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</a></div>
