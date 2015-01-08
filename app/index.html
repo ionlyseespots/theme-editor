@@ -69,8 +69,20 @@
     <ng-view autoscroll/>
     </div>
     <script type="text/javascript" src="../bower_components/jquery-zclip/jquery.zclip.js"></script>
+    <a href="#" id="d_clip_button" style="border:1px solid black; padding:20px;">Copy To Clipboard</a>
+    <br /><br />
+    <p id="description">dddddddddddddddddd</p>
+    <script language="JavaScript">
+        $(document).ready(function(){
+            $('#d_clip_button').zclip({
+               path:'ZeroClipboard.swf',
+                copy:$('p#baseDesktop1').text()
+            });
+
+        });
 
 
+    </script>
 </section>
 
 
