@@ -330,7 +330,20 @@
         </div>
     </div>
 </div>
+<a href="#" id="d_clip_button" style="border:1px solid black; padding:20px;">Copy To Clipboard</a>
+<br /><br />
+<p id="description">dddddddddddddddddd</p>
+<script language="JavaScript">
+    $(document).ready(function(){
+        $('#d_clip_button').zclip({
+            path:'ZeroClipboard.swf',
+            copy:$('p#baseDesktop1').text()
+        });
 
+    });
+
+
+</script>
 <!--<button class="btn btn-success" ng-click="goBodyBackground()">Save Body Background</button>-->
 <!--<button class="btn btn-success" ng-click=" showhtmlcss = 'true'; goDesktopCSS();"><i class="fa fa-paste"></i> Create Copy/Paste</button>-->
 <!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
