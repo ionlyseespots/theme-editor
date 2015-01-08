@@ -46,14 +46,14 @@
             <a href="#/desktopTheme" ng-click="showdesktop = 'true'" style="width: 100%; display: block;height: 100%;">Templates</a>
         </li>
         <li><a href="#/colorEditor" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;" >Colors</a></li>
-        <li> <a href="#/headerTemplate" style="width: 100%; display: block;height: 100%;">Branding</a>
+        <li> <a href="#/headerTemplate" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;">Branding</a>
 
         </li>
         <li>
-            <a href="#/loginBackground" style="width: 100%; display: block;height: 100%;">Login Image</a>
+            <a href="#/loginBackground" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;">Login Image</a>
         </li>
         <li class="pull-right">
-            <a href="#/newTemplate" style="width: 100%; display: block;height: 100%;" >New File</a>
+            <a href="#/newTemplate" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;" >New File</a>
             <!--<button class="btn btn-default" ng-click="goFullscreen()"><i class="fa fa-expand"></i></button>-->
         </li>
 
