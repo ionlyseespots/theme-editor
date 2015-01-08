@@ -49,6 +49,7 @@
 
 
 <!--</script>-->
+
 <div class="text-center">
     <div class="well text-center">
 
@@ -83,6 +84,21 @@
         </div>
 
 
+        <script language="JavaScript">
+            $(document).ready(function(){
+                $('#d_clip_button').zclip({
+                    path:'ZeroClipboard.swf',
+                    copy:$('p#baseDesktop1').text()
+                });
+                $('#d_clip_button2').zclip({
+                    path:'ZeroClipboard.swf',
+                    copy:$('p#desktop1').text()
+                });
+
+            });
+
+
+        </script>
         <div class="row">
             <div class="col-sm-4"><a class="bg-success"style="  height: 360px;text-align: center; color:#000;"
                  ng-click="
