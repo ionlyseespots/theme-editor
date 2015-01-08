@@ -38,17 +38,17 @@
 
 
 </style>
-<script language="JavaScript">
-    $(document).ready(function(){
-        $('#c_clip_button').zclip({
-            path:'../ZeroClipboard.swf',
-            copy:$('p#description').text()
-        });
+<!--<script language="JavaScript">-->
+    <!--$(document).ready(function(){-->
+        <!--$('#c_clip_button').zclip({-->
+            <!--path:'../ZeroClipboard.swf',-->
+            <!--copy:$('p#description').text()-->
+        <!--});-->
 
-    });
+    <!--});-->
 
 
-</script>
+<!--</script>-->
 <div class="text-center">
     <div class="well text-center">
 
@@ -56,9 +56,9 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <a href="#" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ></a>
+                <a href="#" id="d_clip_button" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;" ></a>
             </div>
-            <div class="col-sm-4"><a class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
+            <div class="col-sm-4"><a id="d_clip_button2" class="desktop1" style=" text-align: center; color:#000;" ng-click=" desktop1 = 'true';"></a></div>
             <div class="col-sm-4"><a class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</a></div>
             <!--<div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"-->
                  <!--ng-click="-->
@@ -348,12 +348,7 @@
 <!--<button class="btn btn-success" ng-click=" showhtmlcss = 'true'; goDesktopCSS();"><i class="fa fa-paste"></i> Create Copy/Paste</button>-->
 <!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
   <div class="well" style="margin-top: 25px;">
-        <h1>
-            Generated CSS
-        </h1>
-        <p class="alert-success alert text-center">
-            Copy/Paste
-        </p>
+
 
 
         <div ng-show="baseDesktop || desktop1 || desktop2 || desktop3 || desktop4 || desktop5 || desktop6 || desktop7 || desktop8 || desktop9 || desktop10 || desktop11 || desktop12 || desktop13 || desktop14 || desktop15">
