@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="app/css/animate.min.css">
     <link rel="stylesheet" href="app/css/app.css">
     <style>
+
+.link-card {  display: inline-block !important; float: left; width:calc(100% / 3); }
+        .link-card a {
+            box-sizing: border-box;
+            color: hsla(187, 13%, 25%, 0.5);
+          float: left;
+width: 100%;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.3;
+            margin: 0;
+            padding: 24px 0 !important;
+            position: relative;
+            text-align: center;
+            transition: all 0.2s ease-in-out 0s;
+        }
+        .link-card a:hover {
+            background-color: hsla(187, 13%, 25%, 0.07) !important;
+            color: #f2f2f2;
+            text-decoration: none;}
         .navbar-theme-editor {
             border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
             box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);
@@ -40,32 +60,29 @@
             <a href class="active" style=" width: 100%;font-size: 24px; display: block;height: 100%;">Four51</a></li>
 
 
-
-
-
     </ul>
 
 </div>
+<div style="text-align: center;padding: 25px 0 0; background-color: #52b0de; ">
+    <h2 style="color: #fff; padding: 15px 0 35px; font-size: 35px;">
+        OrderCloud 2.0
+    </h2>
+    <div class="container-fluid" style="padding: 0 !important;max-width:1010px !important; margin: 65px auto 0; ">
 
-<div>
-    <ul>
-        <li>
-            <a>blah</a>
-        </li>
-        <li>
-            <a>blah</a>
-        </li>
-        <li><a href="app/index.html" >Customize my store</a></li>
-    </ul>
-</div>
-<div class="row text-center">
-    <div class="col-md-6">
-        <h2>Before</h2>
-    </div>
-    <div class="col-md-6">
-        <h2>After</h2>
+    <ul style="width: 100%; padding: 0;border-top:  1px solid hsla(0, 0%, 0%, 0.07);">
+    <li class="link-card" style="border-right:  1px solid hsla(0, 0%, 0%, 0.07);" >
+        <a>link</a>
+    </li>
+<li class="link-card" >
+    <a>link</a>
+</li>
+    <li class="link-card" style="border-left:  1px solid hsla(0, 0%, 0%, 0.07);"><a href="app/index.html" >Customize My Store</a></li>
+</ul>
     </div>
 </div>
+
+
+
 
 
 </body>
