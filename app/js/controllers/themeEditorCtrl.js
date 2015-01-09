@@ -288,5 +288,5 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         $scope.templatefile = '/* custom.css */' + '\n' + '/* Desktop Template */' + '\n' + formatNative($scope.designDesktopCSS);
         console.log($scope.templatefile);
     };
-
+    $scope.showdesktop = true;
 });

@@ -1,70 +1,20 @@
-<!--<div class="pull-right">-->
-    <!--<a href="#/newTemplate" class="btn btn-default" >Advanced</a>-->
-<!--</div>-->
+
+<section class="container-fluid clearfix col-collapse">
+    <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff;box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);">
 
 
-<!--<div>-->
-
-    <!--<a href="#/desktopTheme" class="btn btn-default">Desktop Templates</a>-->
-    <!--<a href="#/headerTemplate" class="btn btn-default">Branding</a>-->
-
-    <!--<a href="#/loginBackground" class="btn btn-default">Login Background Image</a>-->
-    <!--&lt;!&ndash;<a href="#/bodyBackground" class="btn btn-default">Body Background</a>&ndash;&gt;-->
-    <!--<br />-->
-    <!--<br />-->
-<!--</div>-->
-<h2>
+    <h2>
     Branding
 </h2>
-<!--<div class="text-center">-->
-    <!--<div class="well row text-center">-->
-        <!--<div class="col-sm-6"><a class="bg-success"  style="  padding: 25px 0; text-align: center; color:#000;" ng-click="visible0 = true; visible1=false; visible2=false; visible3=false">Edit Default</a></div>-->
-
-        <!--<div class="col-sm-4"><a class="bg-success" style=" padding: 25px 0; text-align: center; color:#000;">Template</a></div>-->
-        <!--<div class="col-sm-12"><a class="bg-success"  style="padding: 25px 0; text-align: center; color:#000;" ng-click="goNewCustom()">Create New</a></div>-->
-   <!--</div>-->
-<!--</div>-->
-<!--<div style="margin-bottom: 25px;" ng-show="visible1 || visible2 || visible3" ng-hide="visible0">-->
-    <!--<button class="btn btn-default" ng-click="goNewCustom()">Full width</button>-->
-    <!--<button class="btn btn-default" ng-click="goNewTwocol()">2-column</button>-->
-    <!--<button class="btn btn-default" ng-click="goNewThreecol()">3-column</button>-->
-<!--</div>-->
-    <!--<div  class="ng-scope" ng-repeat="design in designviewdefault">-->
-        <!--<div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>-->
-    <!--</div>-->
 
 
     <div ng-repeat="design in designviewdiv">
         <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
     </div>
 
-    <!--<div ng-show="visible2">-->
-        <!--<tabset>-->
-            <!--<tab heading="{{design.title}}" ng-repeat="design in designviewdivyou">-->
-                <!--<div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>-->
 
-            <!--</tab>-->
-        <!--</tabset>-->
-    <!--</div>-->
-    <!--<div ng-show="visible3">-->
-        <!--<tabset>-->
-            <!--<tab heading="{{design.title}}" ng-repeat="design in designviewdivus">-->
-                <!--<div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>-->
-            <!--</tab>-->
-        <!--</tabset>-->
-    <!--</div>-->
-        </div>
-
-
-
-
-<!--<button class="btn btn-success" ng-click="goHeaderDefault(); goHeaderBackground(); ">Save Header</button>-->
-
-<!--- http://fdietz.github.io/recipes-with-angular-js/common-user-interface-patterns/displaying-a-modal-dialog.html --->
 <div modal="showModal" close="cancel()">
-    <!--<div class="modal-header">-->
-    <!--<h4>Modal Dialog</h4>-->
-    <!--</div>-->
+
     <div class="modal-body" style="max-width: 1280px; margin: 25px auto 0;">
 
 
@@ -211,3 +161,5 @@
         <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>
     </div>
 </div>
+        </div>
+    </section>

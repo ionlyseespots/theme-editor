@@ -13,26 +13,30 @@
     <!--<br />-->
     <!--<br />-->
 <!--</div>-->
-<h2>
-    Login Image
-</h2>
-<p>
-    Enter image URL
-</p>
-<div ng-repeat="design in designloginbackground" style="margin-bottom: 25px;">
-    <input class="form-control" ng-model="design.value" />
-</div>
-<!--<button class="btn btn-success" ng-click="goLoginBackground()">Save Login Background</button>-->
-<button class="btn btn-success" ng-click="goLoginBackground();"><i class="fa fa-paste"></i> Create Copy/Paste</button>
-<!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
-<div ng-show="cssfile">
-    <div class="well" style="margin-top: 25px;">
-        <h1>
-            Generated CSS
-        </h1>
-        <p class="alert-success alert text-center">
-            Copy/Paste
+<section class="container-fluid clearfix col-collapse">
+    <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff;box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);">
+        <h2>
+            Login Image
+        </h2>
+        <p>
+            Enter image URL
         </p>
-        <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>
+        <div ng-repeat="design in designloginbackground" style="margin-bottom: 25px;">
+            <input class="form-control" ng-model="design.value" />
+        </div>
+
+        <button class="btn btn-success" ng-click="goLoginBackground();"><i class="fa fa-paste"></i> Create Copy/Paste</button>
+
+        <div ng-show="cssfile">
+            <div class="well" style="margin-top: 25px;">
+                <h1>
+                    Generated CSS
+                </h1>
+                <p class="alert-success alert text-center">
+                    Copy/Paste
+                </p>
+                <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>
+            </div>
+        </div>
     </div>
-</div>
+</section>

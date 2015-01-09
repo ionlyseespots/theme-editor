@@ -1,8 +1,9 @@
 
 html {overflow-y:scroll; }
-body {margin-top: 88px;}
+body {margin-top: 88px; background-color:#F2F2F2; }
 hr {border-color: transparent;}
 section {position: relative;}
+div.container-fluid { padding: 25px !important; max-width:1010px !important; }
 a {outline: none !important;}
 .baseDesktop {background: url('../css/img/baseThumbnail.jpg') center;width: 280px; height: 360px;}
 .desktop1 {background: url('../css/img/desktop1Thumbnail.jpg');width: 280px; height: 360px;}

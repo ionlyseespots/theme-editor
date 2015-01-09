@@ -9,11 +9,64 @@
 
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="app/css/animate.min.css">
+    <link rel="stylesheet" href="app/css/app.css">
+    <style>
+        .navbar-theme-editor {
+            border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
+            box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);
+            height: 88px;
+            background-color: hsla(0, 0%, 100%, 0.95);
+            transition: background-color 0.2s ease-in-out 0s;
+        }
+        .navbar-theme-editor .nav li a { color: hsl(0, 0%, 68%);
+            font-size: 16px;margin: 0 9px;
+            padding:35px 0;
+            text-decoration: none;
+            transition-duration: 0.2s;
+            transition-property: font-size, color;
+            transition-timing-function: ease-in-out;}
+        .navbar-theme-editor .nav li a.active {color: hsl(0, 0%, 20%);}
+        ol li {color: hsl(0, 0%, 68%);
+            font-size: 24px;
+            margin: 0 9px;}
+        h1, h2, h3, h4, h5, h6 {  color: hsl(168, 26%, 35%);}
+    </style>
 </head>
 <body>
-<h1>Landing Page</h1>
-<a href="app/index.html">Go to HTML + Bootstrap Template Editor application</a>
+<div class="navbar navbar-default navbar-theme-editor navbar-fixed-top" role="navigation">
+    <ul class="nav navbar-nav  text-center" style="width: 100%; margin: 0;padding: 0 25px 0 0;">
+        <li style="border-right: 1px solid hsla(0, 0%, 0%, 0.1);padding: 0 25px;margin-top: -3px;">
+            <a href class="active" style=" width: 100%;font-size: 24px; display: block;height: 100%;">Four51</a></li>
+
+
+
+
+
+    </ul>
+
+</div>
+
+<div>
+    <ul>
+        <li>
+            <a>blah</a>
+        </li>
+        <li>
+            <a>blah</a>
+        </li>
+        <li><a href="app/index.html" >Customize my store</a></li>
+    </ul>
+</div>
+<div class="row text-center">
+    <div class="col-md-6">
+        <h2>Before</h2>
+    </div>
+    <div class="col-md-6">
+        <h2>After</h2>
+    </div>
+</div>
+
+
 </body>
 </html>
