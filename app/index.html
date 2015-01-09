@@ -32,7 +32,10 @@
             transition-property: font-size, color;
             transition-timing-function: ease-in-out;}
         .navbar-theme-editor .nav li a.active {color: hsl(0, 0%, 20%);}
-
+ol li {color: hsl(0, 0%, 68%);
+    font-size: 24px;
+    margin: 0 9px;}
+        h1, h2, h3, h4, h5, h6 {  color: hsl(168, 26%, 35%);}
     </style>
 </head>
 <body>
@@ -88,23 +91,54 @@
         Templates
     </h2>
     <ol>
-        <li>Select a thumbnail</li>
-        <li>Copy - click a thumbnail to automatically copy theme to your clipboard</li>
-        <li>Paste - paste in Admin code editor file: css/custom.css</li>
+        <li> <span style="color:#39AC95;">Copy</span> - click a thumbnail to copy theme to your clipboard</li>
+        <li><span style="color:#39AC95;">Paste</span> - paste clipboard into Admin code editor file: css/custom.css</li>
     </ol>
     <!--<a href="#" id="c_clip_button" style="border:1px solid black; padding:20px;">Copy To Clipboard</a>-->
     <!--<br /><br />-->
     <!--<p style="position: relative;" id="description">bogeyman</p>-->
     <style>
-        .row div > div {
-            margin: 15px 0;
+        .row {padding: 15px 0; text-align: center;}
+.row div div {box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);}
+        .row div div {
+            margin: 0;
             transition: margin 0.5s ease-out 0s;
             -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out;
-            background-size: 100%;width: 100%;max-height: 360px; min-height: 100px;  background-repeat: no-repeat;
+           width: 100%;background-repeat: no-repeat;
         }
-        .row div:hover  > div{ margin-top: 2px;}
+
+        .row div:hover  div{ margin-top: -15px; }
+.col-md-4 {margin-bottom: 15px; }
+        /*.row > div:hover:before {*/
 
 
+        /*position: absolute;*/
+/*padding: 35px 0;*/
+         /*bottom: 0; left: 15px; right: 15px;*/
+         /*background-color: hsla(0, 0%, 0%, 0.1);*/
+            /*font-size: 24px;*/
+        /*content: 'Copy';}*/
+    .hover-title { backface-visibility: hidden;
+        bottom: -7px;
+        box-sizing: border-box;
+        color: hsl(0, 0%, 32%);
+       background-color: hsla(0, 0%, 0%, 0.1);
+        font-weight: 500;
+        left: 15px;
+
+        opacity: 0;
+        overflow: hidden;
+
+        pointer-events: none;
+        position: absolute;
+        right: 15px;padding: 75px 0; font-size: 24px;
+        text-align: center;
+        transform: translate3d(0px, 3px, 0px);
+        transition-duration: 0.2s;
+        transition-property: transform, opacity;
+        transition-timing-function: ease-in-out;
+       }
+        .row > div:hover .hover-title { opacity: 1;}
     </style>
     <!--<script language="JavaScript">-->
     <!--$(document).ready(function(){-->
@@ -124,11 +158,13 @@
 
 
     <div class="row">
-        <div class="col-sm-4">
-            <div id="d_clip_button"  class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;"></div>
+        <div class="col-md-4">
+            <div id="d_clip_button" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;">
+                <h3 class="hover-title">Copy</h3>
+            </div>
         </div>
-        <div class="col-sm-4"><div id="d_clip_button2"  class="desktop1" style=" text-align: center; color:#000;"></div></div>
-        <div class="col-sm-4"><div class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</div></div>
+        <div class="col-md-4"><div id="d_clip_button2"  class="desktop1" style=" text-align: center; color:#000;"></div></div>
+        <div class="col-md-4"><div class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</div></div>
         <!--<div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"-->
         <!--ng-click="-->
         <!--desktop3 = true;-->
