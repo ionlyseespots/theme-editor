@@ -32,71 +32,49 @@
             transition-property: font-size, color;
             transition-timing-function: ease-in-out;}
         .navbar-theme-editor .nav li a.active {color: hsl(0, 0%, 20%);}
-ol li {color: hsl(0, 0%, 68%);
-    font-size: 24px;
-    margin: 0 9px;}
+            ol li {
+                color: hsl(0, 0%, 68%);
+                font-size: 24px;
+                margin: 0 9px;}
         h1, h2, h3, h4, h5, h6 {  color: hsl(168, 26%, 35%);}
     </style>
 </head>
 <body>
-<div class="navbar navbar-default navbar-theme-editor navbar-fixed-top" role="navigation" track-active>
-    <ul class="nav navbar-nav  text-center" style="width: 100%; margin: 0;padding: 0 25px 0 0;">
-        <li style="border-right: 1px solid hsla(0, 0%, 0%, 0.1);padding: 0 25px;margin-top: -3px;"><a href="../index.html" style=" width: 100%;font-size: 24px; display: block;height: 100%;">Four51</a></li>
-
-
-
-        <li>
-            <a href="#/desktopTheme" ng-click="showdesktop = 'true'" style="width: 100%; display: block;height: 100%;">Templates</a>
-        </li>
-        <li><a href="#/colorEditor" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;" >Colors</a></li>
-        <li> <a href="#/headerTemplate" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;">Branding</a>
-
-        </li>
-        <li>
-            <a href="#/loginBackground" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;">Login Image</a>
-        </li>
-        <li class="pull-right">
-            <a href="#/newTemplate" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;" >New File</a>
-            <!--<button class="btn btn-default" ng-click="goFullscreen()"><i class="fa fa-expand"></i></button>-->
-        </li>
-
-
-
-    </ul>
-
-</div>
-
-
-<section ng-show="showdesktop" class="container-fluid clearfix col-collapse desktopthemes">
-    <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff;">
-    <!--<div class="pull-right">-->
-    <!--<a href="#/newTemplate" class="btn btn-default" >Advanced</a>-->
-    <!--</div>-->
-
-
-    <!--<div>-->
-
-    <!--<a href="#/desktopTheme" class="btn btn-default">Desktop Templates</a>-->
-    <!--<a href="#/headerTemplate" class="btn btn-default">Branding</a>-->
-
-    <!--<a href="#/loginBackground" class="btn btn-default">Login Background Image</a>-->
-    <!--&lt;!&ndash;<a href="#/bodyBackground" class="btn btn-default">Body Background</a>&ndash;&gt;-->
-    <!--<br />-->
-    <!--<br />-->
-    <!--</div>-->
-
-
-
-    <h2>
-        Templates
-    </h2>
-    <ol>
-        <li> <span style="color:#39AC95;">Copy</span> - click a thumbnail to copy theme to your clipboard</li>
-        <li><span style="color:#39AC95;">Paste</span> - paste clipboard into Admin code editor file: css/custom.css</li>
-    </ol>
-    <!--<a href="#" id="c_clip_button" style="border:1px solid black; padding:20px;">Copy To Clipboard</a>-->
-    <!--<br /><br />-->
-    <!--<p style="position: relative;" id="description">bogeyman</p>-->
+    <div class="navbar navbar-default navbar-theme-editor navbar-fixed-top" role="navigation" track-active>
+        <ul class="nav navbar-nav  text-center" style="width: 100%; margin: 0;padding: 0 25px 0 0;">
+            <li style="border-right: 1px solid hsla(0, 0%, 0%, 0.1);padding: 0 25px;margin-top: -3px;">
+                <a href="../index.html" style=" width: 100%;font-size: 24px; display: block;height: 100%;">Four51</a>
+            </li>
+            <li>
+                <a href="#/desktopTheme" ng-click="showdesktop = 'true'" style="width: 100%; display: block;height: 100%;">Templates</a>
+            </li>
+            <li>
+                <a href="#/colorEditor" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;" >Colors</a>
+            </li>
+            <li>
+                <a href="#/headerTemplate" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;">Branding</a>
+            </li>
+            <li>
+                <a href="#/loginBackground" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;">Login Image</a>
+            </li>
+            <li class="pull-right">
+                <a href="#/newTemplate" ng-click="showdesktop = 'false'" style="width: 100%; display: block;height: 100%;" >New File</a>
+            </li>
+        </ul>
+    </div>
+    <section ng-show="showdesktop" class="container-fluid clearfix col-collapse desktopthemes">
+        <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff;">
+        <h2>
+            Templates
+        </h2>
+        <ol>
+            <li>
+                <span style="color:#39AC95;">Copy</span> - click a thumbnail to copy theme to your clipboard
+            </li>
+            <li>
+                <span style="color:#39AC95;">Paste</span> - paste clipboard into Admin code editor file: css/custom.css
+            </li>
+        </ol>
     <style>
         .desktopthemes .row {padding: 15px 0; text-align: center;}
         .desktopthemes .row div div {box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);}
@@ -145,73 +123,35 @@ ol li {color: hsl(0, 0%, 68%);
        }
         .desktopthemes  .row > div:hover .hover-title { opacity: 1;}
     </style>
-    <!--<script language="JavaScript">-->
-    <!--$(document).ready(function(){-->
-    <!--$('#c_clip_button').zclip({-->
-    <!--path:'../ZeroClipboard.swf',-->
-    <!--copy:$('p#description').text()-->
-    <!--});-->
 
-    <!--});-->
+        <script language="JavaScript">
+            $(document).ready(function(){
+                $('#d_clip_button').zclip({
+                    path:'ZeroClipboard.swf',
+                    copy:$('p#baseDesktop1').text()
+                });
+                $('#d_clip_button2').zclip({
+                    path:'ZeroClipboard.swf',
+                    copy:$('p#desktop1').text()
+                });
 
-
-    <!--</script>-->
-
+            });
+        </script>
     <div class="text-center">
-    <div class="well text-center">
-
-
-
-    <div class="row">
-        <div class="col-md-4">
-            <div id="d_clip_button" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;">
-                <h3 class="hover-title">Copy</h3>
+        <div class="well text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="d_clip_button" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;">
+                        <h3 class="hover-title">Copy</h3>
+                    </div>
+                </div>
+                <div class="col-md-4"><div id="d_clip_button2"  class="desktop1" style=" text-align: center; color:#000;">
+                    <h3 class="hover-title">Copy</h3>
+                </div></div>
+                <div class="col-md-4"><div class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">
+                    <h3 class="hover-title">Copy</h3>
+                </div></div>
             </div>
-        </div>
-        <div class="col-md-4"><div id="d_clip_button2"  class="desktop1" style=" text-align: center; color:#000;">
-            <h3 class="hover-title">Copy</h3>
-        </div></div>
-        <div class="col-md-4"><div class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">
-            <h3 class="hover-title">Copy</h3>
-        </div></div>
-        <!--<div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"-->
-        <!--ng-click="-->
-        <!--desktop3 = true;-->
-        <!--baseDesktop= false;-->
-        <!--desktop1= false;-->
-        <!--desktop2= false;-->
-        <!--desktop4= false;-->
-        <!--desktop5= false;-->
-        <!--desktop6= false;-->
-        <!--desktop7= false;-->
-        <!--desktop8= false;-->
-        <!--desktop9= false;-->
-        <!--desktop10= false;-->
-        <!--desktop11= false;-->
-        <!--desktop12= false;-->
-        <!--desktop13= false;-->
-        <!--desktop14= false;-->
-        <!--desktop15= false;-->
-        <!--">-->
-        <!--Template</a></div>-->
-    </div>
-
-
-    <script language="JavaScript">
-        $(document).ready(function(){
-            $('#d_clip_button').zclip({
-                path:'ZeroClipboard.swf',
-                copy:$('p#baseDesktop1').text()
-            });
-            $('#d_clip_button2').zclip({
-                path:'ZeroClipboard.swf',
-                copy:$('p#desktop1').text()
-            });
-
-        });
-
-
-    </script>
     <div class="row">
         <div class="col-sm-4"><div class="bg-success"style="  height: 360px;text-align: center; color:#000;"
                                  ng-click="
@@ -2461,22 +2401,16 @@ ol li {color: hsl(0, 0%, 68%);
 
     </div>
     </div>
-
-
     </div>
-
-
-
-
 </section>
 
 
 
 <section>
     <div>
-<ng-view autoscroll/>
-        </div>
-    </section>
+        <ng-view autoscroll/>
+    </div>
+</section>
 
 
 <script type="text/javascript" src="../bower_components/jquery-zclip/jquery.zclip.js"></script>
