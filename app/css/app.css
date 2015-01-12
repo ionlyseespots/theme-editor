@@ -7,7 +7,8 @@ section {position: relative;}
 h1, h2, h3, h4, h5, h6 {font-family: 'Abel', sans-serif;letter-spacing: 0.0625em;}
 a {outline: none !important;}
 .baseDesktop {background: url('../css/img/baseThumbnail.jpg') center;width: 280px; height: 360px;}
-.desktop1 {background: url('../css/img/desktop1Thumbnail.jpg');width: 280px; height: 360px;}
+.desktop2 {background: url('../css/img/desktop1Thumbnail.jpg');width: 280px; height: 360px;}
+.desktop3 {background: #DFF0D8 url('');width: 280px; height: 360px;}
 .nav > li {display: inline-block;}
 .ta-editor {
     min-height: 300px;
