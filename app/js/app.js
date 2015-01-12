@@ -2,7 +2,7 @@ var Simple = {};
 
 Simple.app = angular.module('SimpleApp',['ngRoute', 'FBAngular', 'textAngular', 'ngSanitize', 'ui.bootstrap', 'ui.bootstrap.modal', 'colorpicker.module', 'ngClipboard']).
     config(['ngClipProvider', function(ngClipProvider) {
-        ngClipProvider.setPath("bower_components/zeroclipboard/dist/ZeroClipboard.swf");
+        ngClipProvider.setPath("../bower_components/zeroclipboard/dist/ZeroClipboard.swf");
     }]).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/headerTemplate', {templateUrl: 'partials/header.html', controller: 'themeEditorCtrl'});
