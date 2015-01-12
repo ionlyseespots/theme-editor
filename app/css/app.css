@@ -135,8 +135,10 @@ h1, h2, h3, h4, h5, h6 {  color: hsl(168, 26%, 35%);}
 }
 .well {
     background-color: #ffffff;
-   ;border-color: transparent;
+   border-color: transparent;
     padding: 10px;
+    border: none;
+    box-shadow: none;
 }
 .well a {
     display: block; cursor: pointer;min-height: 85px;
