@@ -290,7 +290,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     };
 
     $scope.getTextToCopy1 = function() {
-        var s = $('#fe_text').html();
+        var s = $scope.('#fe_text').html();
         return s;
     }
 
