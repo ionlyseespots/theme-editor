@@ -21,7 +21,7 @@
             border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
             box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);
             height: 88px;
-            background-color: hsla(0, 0%, 100%, 0.95);
+            background-color: hsla(196, 100%, 15%, 0.95);
 
         }
         .navbar-theme-editor .nav li a { color: hsl(0, 0%, 68%);
@@ -31,7 +31,8 @@
             transition-duration: 0.2s;
             transition-property: font-size, color;
             transition-timing-function: ease-in-out;}
-        .navbar-theme-editor .nav li a.active {color: hsl(0, 0%, 20%);}
+        .navbar-theme-editor .nav li a:hover {color:#fff;}
+        .navbar-theme-editor .nav li a.active {color: #fff;}
             ol li {
                 color: hsl(0, 0%, 68%);
                 font-size: 24px;
@@ -42,9 +43,9 @@
 <body>
     <div class="navbar navbar-default navbar-theme-editor navbar-fixed-top" role="navigation" track-active>
         <ul class="nav navbar-nav  text-center" style="width: 100%; margin: 0;padding: 0 25px 0 0;">
-            <li style="border-right: 1px solid hsla(0, 0%, 0%, 0.1);padding: 0 25px;margin-top: -3px;">
-                <a href="../index.html" style=" width: 100%;font-size: 24px; display: block;height: 100%;">Four51</a>
-            </li>
+            <li style="padding: 15px 25px;">
+                <a href="#/index.html" class="active" style="  background: url('http://www.four51.com/public/img/logo.svg') no-repeat;cursor: default; display: block;width: 162px;"></a></li>
+
             <li>
                 <a href="#/desktopTheme" ng-click="showdesktop = 'true'" style="width: 100%; display: block;height: 100%;">Templates</a>
             </li>
@@ -63,7 +64,7 @@
         </ul>
     </div>
     <section ng-show="showdesktop" class="container-fluid clearfix col-collapse desktopthemes">
-        <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff;">
+        <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff; box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);">
         <h2>
             Templates
         </h2>
