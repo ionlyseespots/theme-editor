@@ -293,6 +293,10 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         var s = $('#fe_text').html();
         return s;
     }
+    $scope.getTextToCopy2 = function() {
+        var s = $('#fe_text2').html();
+        return s;
+    }
 
     $scope.doSomething = function() {
         console.log("clip-click works!");
