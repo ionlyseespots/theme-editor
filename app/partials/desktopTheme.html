@@ -1,92 +1,96 @@
-<!--<div class="pull-right">-->
-    <!--<a href="#/newTemplate" class="btn btn-default" >Advanced</a>-->
-<!--</div>-->
-
-
-<!--<div>-->
-
-    <!--<a href="#/desktopTheme" class="btn btn-default">Desktop Templates</a>-->
-    <!--<a href="#/headerTemplate" class="btn btn-default">Branding</a>-->
-
-    <!--<a href="#/loginBackground" class="btn btn-default">Login Background Image</a>-->
-    <!--&lt;!&ndash;<a href="#/bodyBackground" class="btn btn-default">Body Background</a>&ndash;&gt;-->
-    <!--<br />-->
-    <!--<br />-->
-<!--</div>-->
-
-<div ng-show="showdesktop" >
-
+<section class="container-fluid clearfix col-collapse desktopthemes">
+<div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff; box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);">
 <h2>
     Templates
 </h2>
 <ol>
-    <li>Select a thumbnail</li>
-    <li>Copy - click a thumbnail to automatically copy theme to your clipboard</li>
-    <li>Paste - paste in Admin code editor file: css/custom.css</li>
+    <li>
+        <span style="color:#39AC95;">Copy</span> - click a thumbnail to copy theme to your clipboard
+    </li>
+    <li>
+        <span style="color:#39AC95;">Paste</span> - paste clipboard into Admin code editor file: css/custom.css
+    </li>
 </ol>
-<!--<a href="#" id="c_clip_button" style="border:1px solid black; padding:20px;">Copy To Clipboard</a>-->
-<!--<br /><br />-->
-<!--<p style="position: relative;" id="description">bogeyman</p>-->
 <style>
-    .row a {
-        margin: 15px 0;
+    .desktopthemes .row {padding: 15px 0; text-align: center;}
+    .desktopthemes .row div div {box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);}
+    .desktopthemes  .row div div {
+        margin: 0;
         transition: margin 0.5s ease-out 0s;
         -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out;
-        background-size: 100%;width: 100%;max-height: 360px; min-height: 100px;  background-repeat: no-repeat;
+        width: 100%;background-repeat: no-repeat;
     }
-    .row a:hover { margin-top: 2px;}
+
+    .desktopthemes .row div:hover  div{ margin-top: -15px; }
+    .col-md-4 {margin-bottom: 15px; }
+    /*.row > div:hover:before {*/
 
 
+    /*position: absolute;*/
+    /*padding: 35px 0;*/
+    /*bottom: 0; left: 15px; right: 15px;*/
+    /*background-color: hsla(0, 0%, 0%, 0.1);*/
+    /*font-size: 24px;*/
+    /*content: 'Copy';}*/
+    .hover-title { backface-visibility: hidden;
+        bottom: -7px;
+        box-sizing: border-box;
+        color: hsl(0, 0%, 32%);
+        background-color: hsla(0, 0%, 0%, 0.1);font-size: 24px;
+        font-weight: 500;
+        left: 15px;
+        text-shadow:    1px 0px 1px #ccc,
+        0px 1px 1px #eee,
+        2px 1px 1px #ccc, 1px 2px 1px #eee;
+
+
+
+        opacity: 0;
+        overflow: hidden;
+
+        pointer-events: none;
+        position: absolute;
+        right: 15px;padding: 75px 0; font-size: 24px;
+        text-align: center;
+        transform: translate3d(0px, 3px, 0px);
+        transition-duration: 0.2s;
+        transition-property: transform, opacity;
+        transition-timing-function: ease-in-out;
+    }
+    .desktopthemes  .row > div:hover .hover-title { opacity: 1;}
 </style>
-<!--<script language="JavaScript">-->
-    <!--$(document).ready(function(){-->
-        <!--$('#c_clip_button').zclip({-->
-            <!--path:'../ZeroClipboard.swf',-->
-            <!--copy:$('p#description').text()-->
-        <!--});-->
 
-    <!--});-->
+<script language="JavaScript">
+    $(document).ready(function(){
+        $('#d_clip_button').zclip({
+            path:'ZeroClipboard.swf',
+            copy:$('p#baseDesktop1').text()
+        });
+        $('#d_clip_button2').zclip({
+            path:'ZeroClipboard.swf',
+            copy:$('p#desktop1').text()
+        });
 
-
-<!--</script>-->
-
+    });
+</script>
 <div class="text-center">
-    <div class="well text-center">
-
-
-
-        <div class="row">
-            <div class="col-sm-4">
-                <div id="d_clip_button"  class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;"></div>
-            </div>
-            <div class="col-sm-4"><div id="d_clip_button2"  class="desktop1" style=" text-align: center; color:#000;"></div></div>
-            <div class="col-sm-4"><div class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">Template</div></div>
-            <!--<div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"-->
-                 <!--ng-click="-->
-                 <!--desktop3 = true;-->
-                 <!--baseDesktop= false;-->
-                 <!--desktop1= false;-->
-                 <!--desktop2= false;-->
-                 <!--desktop4= false;-->
-                 <!--desktop5= false;-->
-                 <!--desktop6= false;-->
-                 <!--desktop7= false;-->
-                 <!--desktop8= false;-->
-                 <!--desktop9= false;-->
-                 <!--desktop10= false;-->
-                 <!--desktop11= false;-->
-                 <!--desktop12= false;-->
-                 <!--desktop13= false;-->
-                 <!--desktop14= false;-->
-                 <!--desktop15= false;-->
-                    <!--">-->
-                <!--Template</a></div>-->
+<div class="well text-center">
+<div class="row">
+    <div class="col-md-4">
+        <div id="d_clip_button" class="baseDesktop" style=" height: 360px;  text-align: center; color:#000;">
+            <h3 class="hover-title">Copy</h3>
         </div>
-
-
-        <div class="row">
-            <div class="col-sm-4"><a class="bg-success"style="  height: 360px;text-align: center; color:#000;"
-                 ng-click="
+    </div>
+    <div class="col-md-4"><div id="d_clip_button2"  class="desktop1" style=" text-align: center; color:#000;">
+        <h3 class="hover-title">Copy</h3>
+    </div></div>
+    <div class="col-md-4"><div class="bg-success" style="  height: 360px; text-align: center; color:#000;" ng-click=" desktop2 = 'true';">
+        <h3 class="hover-title">Copy</h3>
+    </div></div>
+</div>
+<div class="row">
+    <div class="col-sm-4"><div class="bg-success"style="  height: 360px;text-align: center; color:#000;"
+                               ng-click="
                  desktop4 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -104,10 +108,10 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                Template</a></div>
+        <h3 class="hover-title">Copy</h3></div></div>
 
-            <div class="col-sm-4"><a class="bg-success" style="height: 360px; text-align: center; color:#000;"
-                 ng-click="
+    <div class="col-sm-4"><div class="bg-success" style="height: 360px; text-align: center; color:#000;"
+                               ng-click="
                  desktop5 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -125,9 +129,9 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                Template</a></div>
-            <div class="col-sm-4"><a class="bg-success" style="  height: 360px;text-align: center; color:#000;"
-                 ng-click="
+        <h3 class="hover-title">Copy</h3></div></div>
+    <div class="col-sm-4"><div class="bg-success" style="  height: 360px;text-align: center; color:#000;"
+                               ng-click="
                  desktop6 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -145,13 +149,13 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                Template</a></div>
-        </div>
+        <h3 class="hover-title">Copy</h3></div></div>
+</div>
 
 
-        <div class="row">
-            <div class="col-sm-4"><a class="bg-success" style="height: 360px; text-align: center; color:#000;"
-                 ng-click="
+<div class="row">
+    <div class="col-sm-4"><a class="bg-success" style="height: 360px; text-align: center; color:#000;"
+                             ng-click="
                  desktop7 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -169,10 +173,10 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
+        <h3 class="hover-title">Copy</h3></a></div>
 
-            <div class="col-sm-4"><a class="bg-success" style="  height: 360px;text-align: center; color:#000;"
-                 ng-click="
+    <div class="col-sm-4"><a class="bg-success" style="  height: 360px;text-align: center; color:#000;"
+                             ng-click="
                  desktop8 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -190,9 +194,9 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
-            <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
-                 ng-click="
+        <h3 class="hover-title">Copy</h3></a></div>
+    <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
+                             ng-click="
                  desktop9 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -210,13 +214,13 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
-        </div>
+        <h3 class="hover-title">Copy</h3></a></div>
+</div>
 
 
-        <div class="row">
-            <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
-                 ng-click="
+<div class="row">
+    <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
+                             ng-click="
                  desktop10 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -234,10 +238,10 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
+        <h3 class="hover-title">Copy</h3></a></div>
 
-            <div class="col-sm-4"><a class="bg-success" style="  height: 360px;text-align: center; color:#000;"
-                 ng-click="
+    <div class="col-sm-4"><a class="bg-success" style="  height: 360px;text-align: center; color:#000;"
+                             ng-click="
                  desktop11 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -255,9 +259,9 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
-            <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
-                 ng-click="
+        <h3 class="hover-title">Copy</h3></a></div>
+    <div class="col-sm-4"><a class="bg-success" style=" height: 360px; text-align: center; color:#000;"
+                             ng-click="
                  desktop12 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -275,13 +279,13 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
-        </div>
+        <h3 class="hover-title">Copy</h3></a></div>
+</div>
 
 
-        <div class="row">
-            <div class="col-sm-4"><a class="bg-success" style="height: 360px; text-align: center; color:#000;"
-                 ng-click="
+<div class="row">
+    <div class="col-sm-4"><a class="bg-success" style="height: 360px; text-align: center; color:#000;"
+                             ng-click="
                  desktop13 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -299,10 +303,10 @@
                  desktop14= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
+        T   <h3 class="hover-title">Copy</h3></a></div>
 
-            <div class="col-sm-4"><a class="bg-success" style=" height: 360px;text-align: center; color:#000;"
-                 ng-click="
+    <div class="col-sm-4"><a class="bg-success" style=" height: 360px;text-align: center; color:#000;"
+                             ng-click="
                  desktop14 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -320,9 +324,9 @@
                  desktop13= false;
                  desktop15= false;
                     ">
-                 Template</a></div>
-            <div class="col-sm-4"><a class="bg-success" style=" height: 360px;text-align: center; color:#000;"
-                 ng-click="
+        <h3 class="hover-title">Copy</h3></a></div>
+    <div class="col-sm-4"><a class="bg-success" style=" height: 360px;text-align: center; color:#000;"
+                             ng-click="
                  desktop15 = true;
                  baseDesktop= false;
                  desktop1= false;
@@ -340,9 +344,9 @@
                  desktop13= false;
                  desktop14= false;
                     ">
-                 Template</a></div>
-        </div>
-    </div>
+        <h3 class="hover-title">Copy</h3></a></div>
+</div>
+</div>
 </div>
 
 <!--<button class="btn btn-success" ng-click="goBodyBackground()">Save Body Background</button>-->
