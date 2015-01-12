@@ -290,7 +290,8 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     };
 
     $scope.getTextToCopy1 = function() {
-        return "ngClip is awesome!";
+        var s = $('#fe_text').html();
+        return s;
     }
 
     $scope.doSomething = function() {
