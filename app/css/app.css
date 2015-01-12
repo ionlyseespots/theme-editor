@@ -77,8 +77,8 @@ strong {
 
 }
 .navbar-theme-editor .nav li a { color: hsl(0, 0%, 68%);
-    font-size: 16px;margin: 0 9px;
-    padding:35px 0;
+    font-size: 16px;margin: 0 9px;font-family: 'Abel', sans-serif;letter-spacing: 0.0625em;
+    padding:35px 10px;
     text-decoration: none;
     transition-duration: 0.2s;
     transition-property: font-size, color;
@@ -90,7 +90,7 @@ ol li {
     font-size: 24px;
     margin: 0 9px;}
 h1, h2, h3, h4, h5, h6 {  color: hsl(168, 26%, 35%);}
-
+hr {clear: both;}
 
 .link-card {  display: inline-block !important; float: left; width:calc(100% / 3); }
 .link-card a {
@@ -118,13 +118,7 @@ h1, h2, h3, h4, h5, h6 {  color: hsl(168, 26%, 35%);}
     background-color: hsla(196, 100%, 15%, 0.95);
     transition: background-color 0.2s ease-in-out 0s;
 }
-.navbar-theme-editor .nav li a { color: hsl(0, 0%, 68%);
-    font-size: 16px;margin: 0 9px;
-    padding:35px 0;
-    text-decoration: none;
-    transition-duration: 0.2s;
-    transition-property: font-size, color;
-    transition-timing-function: ease-in-out;}
+
 li a.active {color: hsl(0, 0%, 20%);}
 ol li {color: hsl(0, 0%, 68%);
     font-size: 24px;
