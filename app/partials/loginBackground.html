@@ -25,14 +25,14 @@
             <input class="form-control" ng-model="design.value" />
         </div>
 
-        <button class="btn btn-success" ng-click="goLoginBackground();"><i class="fa fa-paste"></i> Create Copy/Paste</button>
+        <button class="btn btn-success" ng-click="goLoginBackground();">Save</button>
 
         <div ng-show="cssfile">
             <div class="well" style="margin-top: 25px;">
                 <h1>
                     Generated CSS
                 </h1>
-                <p class="alert-success alert text-center">
+                <p class="alert-danger alert text-center">
                     Copy/Paste
                 </p>
                 <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>

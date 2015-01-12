@@ -122,16 +122,16 @@
 <div ng-repeat="design in designheaderbackground" style="margin-bottom: 25px;">
     <input class="form-control" ng-model="design.value" />
 </div>
-<button ng-show="visible1" class="btn btn-success" ng-click="goNewCustom();goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+<button ng-show="visible1" class="btn btn-success" ng-click="goNewCustom();goHeaderBackground(); open(); showhtmlcss = 'true'">Preview</button>
 
 
-<button ng-show="visible2" class="btn btn-success" ng-click="goNewTwocol(); goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+<button ng-show="visible2" class="btn btn-success" ng-click="goNewTwocol(); goHeaderBackground(); open(); showhtmlcss = 'true'">Preview</button>
 
 
-<button ng-show="visible3"  class="btn btn-success" ng-click="goNewThreecol(); goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+<button ng-show="visible3"  class="btn btn-success" ng-click="goNewThreecol(); goHeaderBackground(); open(); showhtmlcss = 'true'">>Preview</button>
 
 
-<button ng-show="visible0" class="btn btn-success" ng-click="goHeaderDefault(); goHeaderBackground(); open(); showhtmlcss = 'true'"><i class="fa fa-paste"></i> Create Copy/Paste and Preview</button>
+<button ng-show="visible0" class="btn btn-success" ng-click="goHeaderDefault(); goHeaderBackground(); open(); showhtmlcss = 'true'">Preview</button>
 <!--<div  ng-class="{'hidden': !isActiveHeaderBg, '': isActiveHeaderBg}">-->
     <!--<button class="btn btn-default" ng-click="goHeaderDefault()" style="float: right;">Toggle Background</button>-->
     <!--<div ng-model="design.hello" ta-toolbar="[['insertImage','clear']]" text-angular=""></div>-->
@@ -146,7 +146,7 @@
         <h1>
             Generated HTML
         </h1>
-        <p class="alert-success alert text-center">
+        <p class="alert-danger alert text-center">
             Copy/Paste
         </p>
         <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{templatefile}}</code>
@@ -155,7 +155,7 @@
         <h1>
             Generated CSS
         </h1>
-        <p class="alert-success alert text-center">
+        <p class="alert-danger alert text-center">
             Copy/Paste
         </p>
         <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{cssfile}}</code>
