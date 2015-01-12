@@ -289,7 +289,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.templatefile);
     };
 
-    $scope.getTextToCopy = function() {
+    $scope.getTextToCopy1 = function() {
         return "ngClip is awesome!";
     }
 
