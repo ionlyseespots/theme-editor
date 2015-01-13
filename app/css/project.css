@@ -36,9 +36,7 @@ Main Components
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
 }
-.projects-container::before {
-    /* never visible - this is used in jQuery to check the current MQ */
-    content: 'mobile';
+.projects-container::after {
     background: url('http://www.four51.com/public/img/logo.svg') no-repeat; background-size: 20% 40%;
     background-position: center top;
     bottom: 0;
@@ -49,6 +47,12 @@ Main Components
     right: 0;
     top: 0;
     z-index: -1;
+}
+
+.projects-container::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none;
 }
 .projects-container li {
     position: absolute;
@@ -151,6 +155,7 @@ Main Components
     .projects-container::before {
         /* never visible - this is used in jQuery to check the current MQ */
         content: 'desktop';
+
     }
     .projects-container li {
         width: 25vw;
