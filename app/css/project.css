@@ -115,7 +115,7 @@ Main Components
     top: 75vh;
 }
 .projects-container li:nth-of-type(4)::after {
-    background-image: url("img/img-4-small.jpg");
+    background-image: url("http://www.four51.com/public/img/MobileShot_Experiment03.png");
 }
 .projects-container li:nth-of-type(4)::before {
     content: 'img/img-4-small.jpg';
@@ -193,7 +193,7 @@ Main Components
         content: 'img/img-4-large.jpg';
     }
     .projects-container li:nth-of-type(4)::after {
-        background-image: url("img/img-4-large.jpg");
+        background-image: url("http://www.four51.com/public/img/MobileShot_Experiment03.png");
     }
     .projects-container li::after {
         height: 100vh;
