@@ -151,10 +151,14 @@
 <script>
     jQuery(document).ready(function($){
         //window load projects
-        $('.projects-container ul li').each(function(i){
-            var t = $(this);
-            setTimeout(function(){ t.addClass('is-loaded'); }, (i+1) * 50);
-        });
+        setTimeout(function(){
+            $('.projects-container ul li').each(function(i){
+                var t = $(this);
+                setTimeout(function(){ t.addClass('is-loaded'); }, (i+1) * 50);
+            });
+        }, 500);
+
+
 
 
         //open project
