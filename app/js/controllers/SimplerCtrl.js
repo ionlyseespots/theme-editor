@@ -22,4 +22,5 @@ Simple.app.controller("SimpleCtrl", function($scope, Fullscreen){
     $scope.cancel = function() {
         $scope.showModal = false;
     };
+
 });
