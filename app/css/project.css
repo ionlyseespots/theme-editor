@@ -103,6 +103,13 @@ Main Components
     content: 'img/img-1-small.jpg';
     display: none;
 }
+.projects-container li:first-of-type::before {
+    content: 'img/img-1-large.jpg';
+}
+.projects-container li:first-of-type::after {
+    background-image: url("img/drafting.jpg");
+}
+
 .projects-container li:nth-of-type(2) {
     top: 25vh;
 }
@@ -174,7 +181,7 @@ Main Components
         content: 'img/img-1-large.jpg';
     }
     .projects-container li:first-of-type::after {
-        background-image: url("img/img-1-large.jpg");
+        background-image: url("img/drafting.jpg");
     }
     .projects-container li:nth-of-type(2) {
         top: 0;
