@@ -97,7 +97,7 @@ Main Components
     top: 25vh;
 }
 .projects-container li:nth-of-type(2)::after {
-    background-image: url("img/img-2-small.jpg");
+    background-image: url("img/shutterstock_86603806.jpg");
 }
 .projects-container li:nth-of-type(2)::before {
     content: 'img/img-2-small.jpg';
@@ -173,7 +173,7 @@ Main Components
         content: 'img/img-2-large.jpg';
     }
     .projects-container li:nth-of-type(2)::after {
-        background-image: url("img/img-2-large.jpg");
+        background-image: url("img/shutterstock_86603806.jpg");
     }
     .projects-container li:nth-of-type(3) {
         top: 0;
