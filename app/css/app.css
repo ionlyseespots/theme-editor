@@ -74,7 +74,8 @@ strong {
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
     box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);
     height: 88px;
-    background-color: hsla(196, 100%, 15%, 0.95);
+    background-color: hsla(196, 100%, 15%, 0.50);
+    z-index: 9999999991; /* overlay zeroclipboard */
 
 }
 .navbar-theme-editor .nav li a { color: hsl(0, 0%, 68%);
