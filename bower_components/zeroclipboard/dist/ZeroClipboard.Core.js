@@ -395,7 +395,7 @@
     swfPath: _getDefaultSwfPath(),
     trustedDomains: window.location.host ? [ window.location.host ] : [],
     cacheBust: true,
-    forceEnhancedClipboard: false,
+    forceEnhancedClipboard: true,
     flashLoadTimeout: 3e4,
     autoActivate: true,
     bubbleEvents: true,
