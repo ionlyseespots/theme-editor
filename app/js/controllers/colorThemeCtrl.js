@@ -680,6 +680,7 @@ Simple.app.controller("colorThemeCtrl", function($scope, Less){
         format($scope.categorywells);
         format($scope.productwells);
         $scope.copyColors = 'true';
+        $('.get-color').addClass('animated fadeIn');
         console.log($scope.file);
     };
 
@@ -703,6 +704,8 @@ Simple.app.controller("colorThemeCtrl", function($scope, Less){
         // $scope.wells = angular.copy($scope.resetwells);
         $scope.categorywells = angular.copy($scope.resetcategorywells);
         $scope.productwells = angular.copy($scope.resetproductwells);
+        $scope.copyColors = 'false';
+        $('.get-color').removeClass('fadeIn');
     };
 
     $scope.getColorToCopy = function() {

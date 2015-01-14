@@ -1,7 +1,7 @@
 
 html {overflow-y:scroll; }
 body {margin-top: 88px; background-color:#fafafa; }
-hr {border-color: transparent;}
+hr {border-color: transparent; margin-top: 5px; margin-bottom: 5px;}
 section {position: relative;}
 /*div.container-fluid { padding: 25px !important; max-width:1010px !important; }*/
 h1, h2, h3, h4, h5, h6 {font-family: 'Abel', sans-serif;letter-spacing: 0.0625em;}
