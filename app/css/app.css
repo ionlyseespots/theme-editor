@@ -87,11 +87,8 @@ strong {
     transition-timing-function: ease-in-out;}
 .navbar-theme-editor .nav li a:hover {color:#fff;}
 .navbar-theme-editor .nav li a.active {color: #fff;}
-ol li {
-    color: hsl(0, 0%, 68%);
-    font-size: 24px;
-    margin: 0 9px;}
-hr {clear: both;}
+
+
 
 .link-card {  display: inline-block !important; float: left; width:calc(100% / 3); }
 .link-card a {
@@ -121,9 +118,7 @@ hr {clear: both;}
 }
 
 li a.active {color: hsl(0, 0%, 20%);}
-ol li {color: hsl(0, 0%, 68%);
-    font-size: 24px;
-    margin: 0 9px;}
+
 
 .navbar-theme-editor ul li:first-child {padding: 15px 25px;}
 .navbar-theme-editor .navbar-nav {width: 100%; margin: 0;padding: 0 25px 0 0;}
