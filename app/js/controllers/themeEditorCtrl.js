@@ -17,7 +17,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
             "tag":              "div",
             "hello":            "",
             "title":            "Full",
-            "class":            "col-sm-12"
+            "class":            ""
         }
 
     ];
