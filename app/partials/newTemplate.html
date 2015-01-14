@@ -1,61 +1,25 @@
 
 <section class="container-fluid clearfix col-collapse">
     <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff;box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);">
-
-    <h2>
+        <h2>
             New File
         </h2>
-
-            <div ng-repeat="design in designviewdiv">
-                <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
-            </div>
-            <div ng-show="visible2">
-                <tabset>
-                    <tab heading="{{design.title}}" ng-repeat="design in designviewdivyou">
-                        <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
-
-                    </tab>
-                </tabset>
-            </div>
-            <div ng-show="visible3">
-                <tabset>
-                    <tab heading="{{design.title}}" ng-repeat="design in designviewdivus">
-                        <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
-                    </tab>
-                </tabset>
-            </div>
-            <div ng-show="visible4" ng-repeat="design in designviewambient">
-                        <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
-                </tabset>
-            </div>
-            <button class="btn btn-default" ng-click="goNewCustom(); open();  showhtmlcss = 'true'">Preview</button>
-
-            <div modal="showModal" close="cancel()">
-
-                <div class="modal-body" style="max-width: 1280px; margin: 25px auto 0;">
-                    <div style="height: 400px; overflow-y: scroll; overflow-x: hidden;">
-                        <section class="active text-center" style="margin-top: 5px;">
-                            <div class="container-fluid" style="margin: 25px 0;" ng-show="templatefile" ng-bind-html="templatefile"></div>
-                        </section>
-                    </div>
-                </div>
-                <div class="modal-footer" style="max-width: 1280px; margin: 0 auto;">
-                    <button class="btn btn-info" ng-click="ok()">Close Preview</button>
-
-                </div>
-            </div>
-
-            <div ng-show="showhtmlcss">
-                <div class="well" ng-class="{'': !isActiveHeaderBg, 'hidden': isActiveHeaderBg}" style="margin-top: 25px;">
-                    <h1>
-                        Generated HTML
-                    </h1>
-                    <p class="alert-info alert text-center">
-                        Copy/Paste
-                    </p>
-                    <code style="white-space: pre-wrap;white-space: -moz-pre-wrap !important;  white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">{{templatefile}}</code>
-                </div>
-
-            </div>
-        </section>
+        <div ng-repeat="design in designviewdiv">
+            <div ng-model="design.hello" ta-toolbar="[['h1','h2','h3','p','bold','italics','ul', 'ol','insertImage','insertLink','html','clear']]" text-angular=""></div>
         </div>
+        <button class="btn btn-default" ng-click="goNewCustom(); open();">Preview</button>
+        <button clip-copy="templatefile" clip-click="doSomething()" class="btn btn-success get-header" ng-show="copyHeader"><i class="fa fa-paste"></i> Copy</button>
+        <div modal="showModal" close="cancel()">
+            <div class="modal-body">
+                <div class="modal-footer">
+                    <button class="btn btn-lg btn-danger" ng-click="closePreview();ok();"><i class="fa fa-times" style=""></i></button>
+                </div>
+                <div style="height: 766px;overflow-y: auto; overflow-x: hidden;border: 1px solid #d6d6d6;">
+                    <section class="active text-center" style="margin-top: 5px;">
+                        <div class="container-fluid" style="margin: 25px 0;" ng-show="templatefile" ng-bind-html="templatefile"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
