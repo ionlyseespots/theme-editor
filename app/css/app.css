@@ -176,8 +176,8 @@ ul li span.text-primary { display: inline-block;
 }
 
 
-.modal-body{background-color: #fff; border: 1px solid #d6d6d6; box-shadow: 0 6px 20px 0 hsla(0, 0%, 0%, 0.19); border-bottom: 1px solid #d6d6d6;}
-.modal-footer {border: 1px solid #d6d6d6;}
+.modal-body{background-color: #fff;  box-shadow: 0 6px 20px 0 hsla(0, 0%, 0%, 0.19);}
+.modal-footer {padding: 0;margin: 0;border-top: none; border-bottom: 1px solid #d6d6d6;padding-bottom: 10px; margin-bottom: 20px;}
 /* Transitions */
 
 /* Default Enter/Leave */
