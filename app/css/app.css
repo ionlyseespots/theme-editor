@@ -27,11 +27,11 @@ a {outline: none !important;}
     font-weight: bold;
     color: red;
 }
-label {
-    width: 50%;
-    text-align: right;
-    display: inline-block;
-}
+/*label {*/
+    /*width: 50%;*/
+    /*text-align: right;*/
+    /*display: inline-block;*/
+/*}*/
 input, select {
 
 }
