@@ -172,7 +172,8 @@ ul li span.text-primary { display: inline-block;
     right: 25px;
     left: 25px;
     top: 0;
-    z-index: 1050;}
+    z-index: 9999999991; /* overlay zeroclipboard */
+}
 
 
 .modal-body{background-color: #fff;margin: 25px 35px 0 25px;}

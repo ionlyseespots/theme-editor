@@ -679,6 +679,7 @@ Simple.app.controller("colorThemeCtrl", function($scope, Less){
         // format($scope.wells);
         format($scope.categorywells);
         format($scope.productwells);
+        $scope.copyColors = 'true';
         console.log($scope.file);
     };
 
@@ -702,6 +703,15 @@ Simple.app.controller("colorThemeCtrl", function($scope, Less){
         // $scope.wells = angular.copy($scope.resetwells);
         $scope.categorywells = angular.copy($scope.resetcategorywells);
         $scope.productwells = angular.copy($scope.resetproductwells);
+    };
+
+    $scope.getColorToCopy = function() {
+        var s = $('#ordercloud-colors').html();
+        return s;
+    };
+
+    $scope.doSomething = function() {
+        console.log("clip-click works!");
     };
 
 });

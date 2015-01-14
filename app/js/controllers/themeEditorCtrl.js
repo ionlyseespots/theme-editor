@@ -292,11 +292,11 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     $scope.getTextToCopy1 = function() {
         var s = $('#fe_text1').html();
         return s;
-    }
+    };
     $scope.getTextToCopy2 = function() {
         var s = $('#fe_text2').html();
         return s;
-    }
+    };
 
     $scope.doSomething = function() {
         console.log("clip-click works!");
