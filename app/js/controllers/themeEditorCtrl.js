@@ -246,8 +246,14 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         $scope.visible3 = false;
         $scope.visible4 = false;
         $scope.templatefile = formatHtml($scope.designviewdiv);
+
         console.log($scope.templatefile);
     };
+    $scope.closePreview = function() {
+        $scope.copyHeader = 'true';
+        $('.get-header').addClass('animated fadeIn');
+    };
+
     $scope.goNewTwocol = function() {
         $scope.visible0 = false;
         $scope.visible1 = false;
@@ -298,6 +304,10 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         return s;
     };
 
+    $scope.getHeaderToCopy = function() {
+        var s = $('#fe_header').html();
+        return s;
+    };
     $scope.doSomething = function() {
         console.log("clip-click works!");
     };
