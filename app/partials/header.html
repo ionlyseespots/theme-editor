@@ -15,7 +15,7 @@
 
 <div modal="showModal" close="cancel()" >
 
-    <div class="modal-body" style="max-width: 1280px; margin: 25px auto 0;">
+    <div class="modal-body">
 
 
 
@@ -111,37 +111,14 @@
             </section>
         </div>
     </div>
-    <div class="modal-footer" style="max-width: 1280px; margin: 0 auto;">
-        <button class="btn btn-info" ng-click="ok()">Close Preview</button>
-        <!--<button class="btn" ng-click="cancel()">Cancel</button>-->
+    <div class="modal-footer">
+        <button class="btn btn-danger" ng-click="ok();"><i class="fa fa-times" style=""></i></button>
     </div>
 </div>
-        <p style="margin-top: 25px;">
-           Enter background image URL
-        </p>
-<div ng-repeat="design in designheaderbackground" style="margin-bottom: 25px;">
-    <input class="form-control" ng-model="design.value" />
-</div>
-<button ng-show="visible1" class="btn btn-success" ng-click="goNewCustom();goHeaderBackground(); open(); showhtmlcss = 'true'">Preview</button>
 
+<button class="btn btn-success" ng-click="goNewCustom();open();">Preview</button>
 
-<button ng-show="visible2" class="btn btn-success" ng-click="goNewTwocol(); goHeaderBackground(); open(); showhtmlcss = 'true'">Preview</button>
-
-
-<button ng-show="visible3"  class="btn btn-success" ng-click="goNewThreecol(); goHeaderBackground(); open(); showhtmlcss = 'true'">>Preview</button>
-
-
-<button ng-show="visible0" class="btn btn-success" ng-click="goHeaderDefault(); goHeaderBackground(); open(); showhtmlcss = 'true'">Preview</button>
-<!--<div  ng-class="{'hidden': !isActiveHeaderBg, '': isActiveHeaderBg}">-->
-    <!--<button class="btn btn-default" ng-click="goHeaderDefault()" style="float: right;">Toggle Background</button>-->
-    <!--<div ng-model="design.hello" ta-toolbar="[['insertImage','clear']]" text-angular=""></div>-->
-<!--</div>-->
-<!--<button ng-class="{'hidden': !isActiveHeaderBg, '': isActiveHeaderBg}" class="btn btn-success" ng-click="goHeaderBackground()">Save Header Background</button>-->
-        <div class="clearfix">
-<!--<button ng-disabled="!templatefile" class="btn btn-primary pull-right" ng-click="showhtmlcss = !showhtmlcss;"><i class="fa fa-paste"></i> Toggle Copy/Paste</button>-->
-        </div>
-<!--<button ng-show="visible5 || visible6 || visible7" class="btn btn-primary pull-right" ng-click="showhtml = !showhtml;">Toggle Generated CSS</button>-->
-<div ng-show="showhtmlcss">
+<div style="display: none;">
     <div class="well" style="margin-top: 25px;">
         <h1>
             Generated HTML

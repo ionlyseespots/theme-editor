@@ -49,6 +49,7 @@ angular.module('ui.bootstrap.modal', [])
                     if (opts.escape) { body.unbind('keyup', escapeClose); }
                     if (opts.backdrop) {
                         backdropEl.css('display', 'none').removeClass('in');
+                        $('.modal').removeClass('animated fadeInUp');
                         backdropEl.unbind('click', clickClose);
                     }
                     elm.css('display', 'none').removeClass('in');
@@ -58,6 +59,7 @@ angular.module('ui.bootstrap.modal', [])
                     if (opts.escape) { body.bind('keyup', escapeClose); }
                     if (opts.backdrop) {
                         backdropEl.css('display', 'block').addClass('in');
+                        $('.modal').addClass('animated fadeInUp');
                         if(opts.backdrop != "static") {
                             backdropEl.bind('click', clickClose);
                         }
