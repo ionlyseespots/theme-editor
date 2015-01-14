@@ -1410,8 +1410,8 @@
     if (trustedOriginsExpanded.length) {
       str += "trustedOrigins=" + _encodeURIComponent(trustedOriginsExpanded.join(","));
     }
-    if (options.forceEnhancedClipboard === true) {
-      str += (str ? "&" : "") + "forceEnhancedClipboard=true";
+    if (options.forceEnhancedClipboard === false) {
+      str += (str ? "&" : "") + "forceEnhancedClipboard=false";
     }
     if (typeof options.swfObjectId === "string" && options.swfObjectId) {
       str += (str ? "&" : "") + "swfObjectId=" + _encodeURIComponent(options.swfObjectId);
