@@ -132,7 +132,7 @@ Main Components
     top: 75vh;
 }
 .projects-container li:nth-of-type(4)::after {
-    background-image: url("img/MobileShot_Experiment03.jpg");
+    background-image: url("");
 }
 .projects-container li:nth-of-type(4)::before {
     content: 'img/img-4-small.jpg';
@@ -211,7 +211,7 @@ Main Components
         content: 'img/img-4-large.jpg';
     }
     .projects-container li:nth-of-type(4)::after {
-        background-image: url("img/MobileShot_Experiment03.jpg");
+        background-image: url("");
     }
     .projects-container li::after {
         height: 100vh;
@@ -299,7 +299,7 @@ Main Components
 }
 @media only screen and (min-width: 1024px) {
     .cd-title {
-        top: 45vh;
+        top: 50vh;
         width: 25vw;
         opacity: 0;
         -webkit-transform: translateY(-50%) translateX(-20px);
