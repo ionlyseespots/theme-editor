@@ -37,7 +37,7 @@ Main Components
     -webkit-overflow-scrolling: touch;
 }
 .projects-container::after {
-    background: url('http://www.four51.com/public/img/logo.svg') no-repeat; background-size: 20% 40%;
+    background: url('') no-repeat; background-size: 20% 40%;
     background-position: center top;
     bottom: 0;
     content: "";
