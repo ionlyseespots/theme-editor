@@ -23,6 +23,63 @@ a {outline: none !important;}
     outline-offset: -2px;
 }
 
+.desktopthemes .row {padding: 15px 0; text-align: center;}
+.desktopthemes .row div div {box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);}
+.desktopthemes  .row div div {
+    margin: 0;
+    transition: margin 0.5s ease-out 0s;
+    -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out;
+    width: 100%;background-repeat: no-repeat;
+}
+
+.desktopthemes .row div div.zeroclipboard-is-hover{ margin-top: -15px; }
+.col-md-4 {margin-bottom: 15px; }
+/*.row > div:hover:before {*/
+
+
+/*position: absolute;*/
+/*padding: 35px 0;*/
+/*bottom: 0; left: 15px; right: 15px;*/
+/*background-color: hsla(0, 0%, 0%, 0.1);*/
+/*font-size: 24px;*/
+/*content: 'Copy';}*/
+.hover-title { backface-visibility: hidden;
+    bottom: -7px;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 32%);
+    background-color: hsla(0, 0%, 0%, 0.1);font-size: 24px;
+    font-weight: 500;
+    left: 15px;
+    text-shadow:    1px 0px 1px #ccc,
+    0px 1px 1px #eee,
+    2px 1px 1px #ccc, 1px 2px 1px #eee;
+
+
+
+    opacity: 0;
+    overflow: hidden;
+
+    pointer-events: none;
+    position: absolute;
+    right: 15px;padding: 75px 0; font-size: 24px;
+    text-align: center;
+    transform: translate3d(0px, 3px, 0px);
+    transition-duration: 0.2s;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in-out;
+}
+.zeroclipboard-is-active{ box-shadow:0 0 0 5px hsla(0, 0%, 0%, 0.08) inset; }
+.desktopthemes .row div div.zeroclipboard-is-hover .hover-title { opacity: 1;}
+.desktopthemes .row div div .fa-check{
+    display: none;
+}
+.desktopthemes .row div div.zeroclipboard-is-active .fa-paste{
+    display: none;
+}
+.desktopthemes .row div div.zeroclipboard-is-active .fa-check{
+    display: inline-block;
+}
+
 .edit {
     font-weight: bold;
     color: green;
