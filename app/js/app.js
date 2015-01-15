@@ -10,5 +10,6 @@ Simple.app = angular.module('SimpleApp',['ngRoute', 'FBAngular', 'textAngular', 
         $routeProvider.when('/newTemplate', {templateUrl: 'partials/newTemplate.html', controller: 'themeEditorCtrl'});
         $routeProvider.when('/desktopTheme', {templateUrl: 'partials/desktopTheme.html', controller: 'themeEditorCtrl'});
         $routeProvider.when('/colorEditor', {templateUrl: 'partials/colorEditor.html', controller: 'colorThemeCtrl'});
+        $routeProvider.when('/snippets', {templateUrl: 'partials/snippets.html', controller: 'themeEditorCtrl'});
         $routeProvider.otherwise({redirectTo: '/desktopTheme'});
     }]);
