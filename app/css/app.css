@@ -69,6 +69,18 @@ a {outline: none !important;}
     transition-timing-function: ease-in-out;
 }
 .zeroclipboard-is-active{ box-shadow:0 0 0 5px hsla(0, 0%, 0%, 0.08) inset; }
+button.zeroclipboard-is-active{ box-shadow:0 0 0 3px hsla(0, 0%, 0%, 0.08) inset; }
+button.zeroclipboard-is-active .fa-check{
+    display: none;
+}
+button.zeroclipboard-is-active .fa-paste{
+    display: none;
+}
+button.zeroclipboard-is-active .fa-check{
+    display: inline-block;
+}
+
+
 .desktopthemes .row div div.zeroclipboard-is-hover .hover-title { opacity: 1;}
 .desktopthemes .row div div .fa-check{
     display: none;
