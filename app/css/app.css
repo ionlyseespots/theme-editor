@@ -18,6 +18,10 @@ a {outline: none !important;}
     font-size: 100%;
     margin:20px 0;
 }
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: none !important;
+    outline-offset: -2px;
+}
 
 .edit {
     font-weight: bold;
