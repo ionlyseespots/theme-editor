@@ -1,7 +1,7 @@
 
 html {overflow-y:scroll; }
 body {margin-top: 88px; background-color:#fafafa; }
-hr {border-color: transparent; margin-top: 5px; margin-bottom: 5px;}
+hr {border-color: transparent; margin-top: 5px; margin-bottom: 5px;clear: both;}
 section {position: relative;}
 /*div.container-fluid { padding: 25px !important; max-width:1010px !important; }*/
 h1:not('.ta-scroll-window'), h2:not('.ta-scroll-window'), h3:not('.ta-scroll-window'), h4, h5, h6 {font-family: 'Abel', sans-serif;letter-spacing: 0.0625em;}

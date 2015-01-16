@@ -274,8 +274,8 @@ Simple.app.controller("themeEditorCtrl", function($scope){
     };
     $scope.goLoginBackground = function() {
         $scope.cssfile = '/* custom.css */' + '\n' + '/* login background */' + '\n' + formatCss($scope.designloginbackground);
-        $scope.copyHeader = 'true';
-        $('.get-header').addClass('animated fadeIn');
+        $scope.copyBg = 'true';
+        $('.get-bg').addClass('animated fadeIn');
         console.log($scope.cssfile);
     };
     $scope.goBodyBackground = function() {
