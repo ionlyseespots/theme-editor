@@ -54,6 +54,9 @@ Main Components
     content: 'mobile';
     display: none;
 }
+.projects-container p {
+    padding: 75px 0;
+}
 .projects-container li {
     position: absolute;
     top: 0;
