@@ -310,7 +310,13 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         var s = $('#fe_header').html();
         return s;
     };
+    $scope.getMegaToCopy = function() {
+        var s = $('#hide-mega').html();
+        return s;
+    };
+
     $scope.doSomething = function() {
         console.log("clip-click works!");
     };
+
 });
