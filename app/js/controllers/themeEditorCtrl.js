@@ -314,6 +314,18 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         var s = $('#hide-mega').html();
         return s;
     };
+    $scope.getNameToCopy = function() {
+        var s = $('#hide-company-name').html();
+        return s;
+    };
+    $scope.getWidthToCopy = function() {
+        var s = $('#change-width').html();
+        return s;
+    };
+    $scope.getUnstickToCopy = function() {
+        var s = $('#unstick-bottom').html();
+        return s;
+    };
 
     $scope.doSomething = function() {
         console.log("clip-click works!");
