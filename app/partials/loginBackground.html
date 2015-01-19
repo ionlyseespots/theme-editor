@@ -1,8 +1,9 @@
 <section class="container-fluid clearfix col-collapse">
     <div class="container-fluid" style="padding: 25px !important; max-width:1010px !important; margin: 35px auto 0; background-color:#fff;box-shadow: 0 3px 8px -4px hsla(0, 0%, 0%, 0.15);">
         <h2>
-            Logon screen
+            Backgrounds
         </h2>
+
         <ol>
             <li style="    color: hsl(0, 0%, 68%);
     font-size: 24px;
@@ -17,7 +18,7 @@
             <li style="    color: hsl(0, 0%, 68%);
     font-size: 24px;
     margin: 0 9px;">
-                <span style="color:#39AC95;">Copy</span> - click copy to copy CSS to your clipboard
+                <span style="color:#39AC95;">Copy</span> - click copy to save URL to your clipboard
             </li>
             <li style="    color: hsl(0, 0%, 68%);
     font-size: 24px;
@@ -25,10 +26,21 @@
                 <span style="color:#39AC95;">Paste</span> - paste clipboard into CSS file
             </li>
         </ol>
+        <h3>
+        OrderCloud 2.0 Logon screen
+    </h3>
+
         <div ng-repeat="design in designloginbackground" style="margin-bottom: 25px;">
             <input class="form-control" ng-model="design.value" />
         </div>
         <button class="btn btn-default" ng-click="goLoginBackground();">Save</button>
         <button clip-copy="cssfile" clip-click="doSomething()" ng-show="copyBg" class="btn btn-success get-bg"><i class="fa fa-check"></i><i class="fa fa-paste"></i> Copy</button>
+   <h3>
+       OrderCloud 2.0 Background
+   </h3>
+
+        <h3>
+            OrderCloud 2.0 Branding Background
+        </h3>
     </div>
 </section>
