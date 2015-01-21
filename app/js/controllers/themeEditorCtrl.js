@@ -279,10 +279,10 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.cssfile);
     };
     $scope.goBodyBackground = function() {
-        $scope.cssfile = '/* custom.css */' + '\n' + '/* body background */' + '\n' + formatCss($scope.designbodybackground);
+        $scope.cssfile1 = '/* custom.css */' + '\n' + '/* body background */' + '\n' + formatCss($scope.designbodybackground);
         $scope.copyBodyBg = 'true';
         $('.get-bg').addClass('animated fadeIn');
-        console.log($scope.cssfile);
+        console.log($scope.cssfile1);
     };
     $scope.goHeaderDefault = function() {
         var opencontainer = '<!-- branding.html -->' + '\n' + '<section class="jumbotron container-fluid">' + '\n';
