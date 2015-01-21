@@ -5,7 +5,7 @@
         </h2>
 
         <ol>
-            <li style="    color: hsl(0, 0%, 68%);
+            <li style="color: hsl(0, 0%, 68%);
     font-size: 24px;
     margin: 0 9px;">
                 <span style="color:#39AC95;">Enter URL
@@ -18,7 +18,7 @@
             <li style="    color: hsl(0, 0%, 68%);
     font-size: 24px;
     margin: 0 9px;">
-                <span style="color:#39AC95;">Copy</span> - click copy to save URL to your clipboard
+                <span style="color:#39AC95;">Copy</span> - click copy to save background to your clipboard
             </li>
             <li style="    color: hsl(0, 0%, 68%);
     font-size: 24px;
@@ -27,14 +27,21 @@
             </li>
         </ol>
         <h3>
-        OrderCloud 2.0 Logon screen
-    </h3>
-
+            Body
+        </h3>
+        <div ng-repeat="design in designloginbackground" style="margin-bottom: 25px;">
+            <input class="form-control" ng-model="design.value" />
+        </div>
+        <button class="btn btn-default" ng-click="goBodyBackground();">Save</button>
+        <button clip-copy="cssfile" clip-click="doSomething()" ng-show="copyBodyBg" class="btn btn-success get-bg"><i class="fa fa-check"></i><i class="fa fa-paste"></i> Copy</button>
+        <hr />
+        <h3>
+            OrderCloud 2.0 Logon screen
+        </h3>
         <div ng-repeat="design in designloginbackground" style="margin-bottom: 25px;">
             <input class="form-control" ng-model="design.value" />
         </div>
         <button class="btn btn-default" ng-click="goLoginBackground();">Save</button>
         <button clip-copy="cssfile" clip-click="doSomething()" ng-show="copyBg" class="btn btn-success get-bg"><i class="fa fa-check"></i><i class="fa fa-paste"></i> Copy</button>
-
     </div>
 </section>

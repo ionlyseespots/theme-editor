@@ -147,18 +147,18 @@ Simple.app.controller("themeEditorCtrl", function($scope){
             "important":        " !important"
         }
     ];
-//    $scope.designbodybackground = [
-//        {
-//            "name":             "bodybackground",
-//            "parentclass":      "",
-//            "childclass":       "",
-//            "parentelement":    "body",
-//            "element":          "",
-//            "property":         "background-image",
-//            "value":            "",
-//            "important":        ""
-//        }
-//    ];
+    $scope.designbodybackground = [
+        {
+            "name":             "bodybackground",
+            "parentclass":      "",
+            "childclass":       "",
+            "parentelement":    "body",
+            "element":          "",
+            "property":         "background-image",
+            "value":            "",
+            "important":        ""
+        }
+    ];
     $scope.designheaderbackground = [
         {
             "name":             "headerbackground",
@@ -279,7 +279,9 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.cssfile);
     };
     $scope.goBodyBackground = function() {
-        $scope.cssfile = '/* custom.css */' + '\n' + '/* login background */' + '\n' + formatCss($scope.designbodybackground);
+        $scope.cssfile = '/* custom.css */' + '\n' + '/* body background */' + '\n' + formatCss($scope.designbodybackground);
+        $scope.copyBodyBg = 'true';
+        $('.get-bg').addClass('animated fadeIn');
         console.log($scope.cssfile);
     };
     $scope.goHeaderDefault = function() {
