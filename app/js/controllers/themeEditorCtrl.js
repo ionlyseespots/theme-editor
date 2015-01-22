@@ -121,7 +121,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
             "tag":              "div",
             "hello":            '',
             "title":            '',
-            "class":            "col-xs-12"
+            "class":            "container"
         }
     ];
 
@@ -285,7 +285,7 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         console.log($scope.cssfile1);
     };
     $scope.goHeaderDefault = function() {
-        var opencontainer = '<!-- branding.html -->' + '\n' + '<section class="jumbotron container-fluid">' + '\n';
+        var opencontainer = '<!-- branding.html -->' + '\n' + '<section class="jumbotron active">' + '\n';
         var closecontainer = '</section>';
         $scope.templatefile = opencontainer + formatHtml($scope.designviewdefault) + closecontainer;
         console.log($scope.templatefile);
