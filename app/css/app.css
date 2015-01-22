@@ -31,7 +31,7 @@ a {outline: none !important;}
     -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out;
     width: 100%;background-repeat: no-repeat;
 }
-
+.modal .jumbotron {background-color: #fff;}
 .desktopthemes .row div div.zeroclipboard-is-hover{ margin-top: -15px; }
 .col-md-4 {margin-bottom: 15px; }
 /*.row > div:hover:before {*/
