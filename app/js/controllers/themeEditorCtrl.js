@@ -307,6 +307,10 @@ Simple.app.controller("themeEditorCtrl", function($scope){
         var s = $('#fe_text2').html();
         return s;
     };
+    $scope.getTextToCopy3 = function() {
+        var s = $('#fe_text3').html();
+        return s;
+    };
 
     $scope.getHeaderToCopy = function() {
         var s = $('#fe_header').html();

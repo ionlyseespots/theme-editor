@@ -8,7 +8,7 @@ h1:not('.ta-scroll-window'), h2:not('.ta-scroll-window'), h3:not('.ta-scroll-win
 a {outline: none !important;}
 .baseDesktop {background: url('../css/img/baseThumbnail.jpg') center;width: 280px; height: 360px;}
 .desktop2 {background: url('../css/img/desktop1Thumbnail.jpg');width: 280px; height: 360px;}
-.desktop3 {background: #DFF0D8 url('');width: 280px; height: 360px;}
+.desktop3 {background: url('../css/img/desktop2Thumbnail.jpg');width: 280px; height: 360px;}
 .nav > li {display: inline-block;}
 .ta-editor {
     min-height: 300px;
